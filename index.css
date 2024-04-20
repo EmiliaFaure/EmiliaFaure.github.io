@@ -1,0 +1,225 @@
+body {
+    background-color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 6em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.5em;
+
+
+
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: rgb(254, 254, 254);
+    letter-spacing: 0.5em;
+    margin-top: 1%;
+    padding-right: 2%;
+
+
+}
+
+.emi-texto {
+
+    text-align: right;
+    text-shadow: 1px 1px 0 black;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: rgb(54, 53, 53);
+    letter-spacing: 0.5em;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
+}
+
+
+.texto {
+
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+
+}
+
+hr {
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+
+
+video {
+
+    width: 100%;
+    position: absolute;
+
+
+}
+
+.todo {
+
+    position: absolute;
+    margin-top: 35%;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 150%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+
+
+
+}
+
+
+.clip {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+
+}
+
+.clip2 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+}
+
+p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+
+i {
+    color: #afafaf;
+    font-size: 220%;
+    padding: 1%;
+
+}
+
+
+footer {
+
+    padding: 2%;
+    background-color: rgb(31, 29, 29);
+    text-align: center;
+
+}
+
+
+iframe {
+
+    border-radius: 2%;
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    h1 {
+
+        font-size: 2em;
+
+
+    }
+
+    h3 {
+
+        font-size: 1em;
+
+
+
+    }
+
+    .texto {
+
+        font-size: 0.8em;
+
+
+    }
+
+    h2 {
+        font-size: 1em;
+
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: 100%;
+
+        padding-bottom: 2%;
+
+
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    iframe {
+
+        width: 100%;
+
+
+    }
+
+    .clip {
+        font-size: 0.8em;
+
+    }
+
+    .clip2 {
+
+        display: none !important;
+
+    }
+
+    .todo {
+
+        position: absolute;
+        margin-top: 20%;
+    }
+
+    i {
+        
+        padding: 2%;
+    
+    }
+    
+
+
+
+}
