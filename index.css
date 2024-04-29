@@ -7,16 +7,23 @@ body {
 
 a {
     text-decoration: none;
+}
+
+nav{
+
+
+
+    background-color: rgb(31, 29, 29);
 
 }
+
 
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 6em;
     color: rgb(255, 255, 255);
     letter-spacing: 0.5em;
-
-
+ 
 
 }
 
@@ -25,16 +32,24 @@ h3 {
     font-size: 2em;
     color: rgb(254, 254, 254);
     letter-spacing: 0.5em;
-    margin-top: 1%;
-    padding-right: 2%;
-
+   padding-left: 0.5%;
+   
+    
+    
 
 }
 
 .emi-texto {
 
-    text-align: right;
+    text-align: left;
     text-shadow: 1px 1px 0 black;
+    margin-left: 1.5%;
+}
+.iconos{
+
+    text-align: left;
+  
+
 }
 
 h2 {
@@ -72,16 +87,17 @@ hr {
 
 video {
 
-    width: 100%;
+ 
     position: absolute;
 
+    width: 100%;
 
 }
 
 .todo {
 
     position: absolute;
-    margin-top: 35%;
+    margin-top: 30%;
 }
 
 .contenedor {
@@ -121,20 +137,29 @@ p {
 
 i {
     color: #afafaf;
-    font-size: 220%;
+    font-size: 200%;
     padding: 1%;
 
 }
 
+.redes{
+
+align-items: center;
+ }
 
 footer {
-
+ text-align: center;
     padding: 2%;
     background-color: rgb(31, 29, 29);
-    text-align: center;
 
+    
 }
 
+h6{
+    padding-top: 2%;
+    color: #afafaf;
+    font-size: 1em;
+}
 
 iframe {
 
@@ -142,7 +167,11 @@ iframe {
 
 }
 
+.formulario{
 
+    background-color: blue;
+
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -177,7 +206,6 @@ iframe {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-flow: 100%;
-
         padding-bottom: 2%;
 
 
@@ -219,7 +247,9 @@ iframe {
     
     }
     
-
+h6{
+    font-size: 0.8em;
+}
 
 
 }
