@@ -2,6 +2,7 @@ body {
     background-color: rgba(255, 255, 255, 1);
     margin: 0;
     padding: 0;
+
 }
 
 a {
@@ -9,6 +10,9 @@ a {
 }
 
 nav{
+
+
+
     background-color: rgb(31, 29, 29);
 
 }
@@ -20,6 +24,7 @@ h1 {
     color: rgb(255, 255, 255);
     letter-spacing: 0.5em;
  
+
 }
 
 h3 {
@@ -27,19 +32,24 @@ h3 {
     font-size: 2em;
     color: rgb(254, 254, 254);
     letter-spacing: 0.5em;
-    padding-left: 0.5%;    
+   padding-left: 0.5%;
+   
+    
+    
 
 }
 
 .emi-texto {
+
     text-align: left;
     text-shadow: 1px 1px 0 black;
     margin-left: 1.5%;
 }
-
 .iconos{
+
     text-align: left;
-    
+  
+
 }
 
 h2 {
@@ -55,6 +65,7 @@ h2 {
 
 
 .texto {
+
     text-align: justify;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2em;
@@ -72,16 +83,21 @@ hr {
 
 }
 
+
+
 video {
+
+ 
     position: absolute;
+
     width: 100%;
 
 }
 
 .todo {
+
     position: absolute;
     margin-top: 30%;
-    
 }
 
 .contenedor {
@@ -92,6 +108,8 @@ video {
     padding-right: 4%;
     padding-bottom: 2%;
 
+
+
 }
 
 
@@ -99,6 +117,7 @@ video {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1em;
     text-align: center;
+
 
 }
 
@@ -112,7 +131,6 @@ video {
 p {
     padding-top: 1%;
     padding-bottom: 1%;
-    
 }
 
 
@@ -125,13 +143,15 @@ i {
 }
 
 .redes{
-    align-items: center;
+
+align-items: center;
  }
 
 footer {
-    text-align: center;
+ text-align: center;
     padding: 2%;
     background-color: rgb(31, 29, 29);
+
     
 }
 
@@ -142,11 +162,13 @@ h6{
 }
 
 iframe {
+
     border-radius: 2%;
 
 }
 
 .formulario{
+
     background-color: blue;
 
 }
@@ -216,7 +238,7 @@ iframe {
     .todo {
 
         position: absolute;
-        margin-top: 20%;
+        margin-top: 12%;
     }
 
     i {
@@ -226,8 +248,22 @@ iframe {
     }
     
 h6{
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
+
+h1 {
+ 
+    font-size: 1.5em;
+    
+
+}
+h3 {
+
+    font-size: 0.8em;
+
+
+
+}
 
 }
