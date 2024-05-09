@@ -1,7 +1,7 @@
 body {
-    background-color: rgba(255, 255, 255, 1);
     margin: 0;
     padding: 0;
+    background-color: rgb(0, 0, 0);
 
 }
 
@@ -9,261 +9,503 @@ a {
     text-decoration: none;
 }
 
-nav{
+video {
 
-
-
-    background-color: rgb(31, 29, 29);
-
+    position: absolute;
+    width: 100%
 }
-
 
 h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 6em;
+    font-size: 5em;
     color: rgb(255, 255, 255);
-    letter-spacing: 0.5em;
- 
-
+    letter-spacing: 0.4em;
 }
 
 h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 2em;
     color: rgb(254, 254, 254);
-    letter-spacing: 0.5em;
-   padding-left: 0.5%;
-   
-    
-    
+    letter-spacing: 0.4em;
+    padding-left: 0.5%;
 
 }
 
 .emi-texto {
+    text-align: center;
+    padding-top: 10%;
 
-    text-align: left;
-    text-shadow: 1px 1px 0 black;
-    margin-left: 1.5%;
 }
-.iconos{
 
-    text-align: left;
-  
+.iconos {
+    text-align: center;
 
 }
 
 h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 2em;
-    color: rgb(54, 53, 53);
-    letter-spacing: 0.5em;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 4%;
+    letter-spacing: 0.4em;
+    color: rgb(171, 171, 171);
+   
 
 }
 
+
+h5 {
+    color: rgb(171, 171, 171);
+
+}
+
+.fondo {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background: url(/flor.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: justify;
+
+}
 
 .texto {
-
-    text-align: justify;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
-    margin-top: 1%;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 1%;
+    padding-left: 5%;
+    padding-top: 8%;
+    width: 455px;
+    color: rgb(200, 199, 199);
 
 }
 
-hr {
-    margin-left: 15%;
-    margin-right: 15%;
-
-}
-
-
-
-video {
-
- 
-    position: absolute;
-
-    width: 100%;
+.flecha {
+    font-size: 300%;
 
 }
 
 .todo {
-
-    position: absolute;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
-.contenedor {
+h4 {
+    font-size: 45px;
+}
+
+.primero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: 150%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 2%;
-
-
-
-}
-
-
-.clip {
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.1em;
+    grid-auto-flow: 100%;
+    padding-top: 4%;
     text-align: center;
 
 
 }
 
-.clip2 {
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.1em;
+.Tvideo1 {
+
+    color: #afafaf;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: left;
+    padding-right: 6%;
+
+}
+
+.online {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100%;
     text-align: center;
 
 }
 
-p {
-    padding-top: 1%;
-    padding-bottom: 1%;
+.Tvideo2 {
+
+    color: #afafaf;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: right;
+    padding-left: 6%;
+    padding-top: 15%;
+
 }
 
+
+
+.segundo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100%;
+    text-align: center;
+    padding-top: 4%;
+
+}
+
+.Tvideo3 {
+    color: #afafaf;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: left;
+
+}
+
+.Tvideo4 {
+    color: #afafaf;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: left;
+
+}
+
+
+.tercero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100%;
+    padding-top: 4%;
+    text-align: center;
+
+}
+
+.Tvideo5 {
+    color: #afafaf;
+    font-size: 16px;
+    padding-right: 2%;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: right;
+
+}
+
+.Tvideo6 {
+    color: #afafaf;
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: right;
+    padding-right: 2%;
+
+}
+
+.teaser {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100%;
+    padding-top: 4%;
+    text-align: center;
+
+}
+
+.babel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: 100%;
+    text-align: center;
+}
+
+.Tvideo7 {
+    color: #afafaf;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: left;
+    padding-right: 6%;
+
+}
+
+.Tvideo8 {
+    color: #afafaf;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    width: 750px;
+    text-align: right;
+    padding-right: 6%;
+    padding-top: 15%;
+
+}
+
+iframe {
+    padding-bottom: 3%;
+
+}
 
 
 i {
     color: #afafaf;
     font-size: 200%;
-    padding: 1%;
-
-}
-
-.redes{
-
-align-items: center;
- }
-
-footer {
- text-align: center;
-    padding: 2%;
-    background-color: rgb(31, 29, 29);
-
-    
-}
-
-h6{
+    padding-left: 3%;
     padding-top: 2%;
-    color: #afafaf;
-    font-size: 1em;
+padding-right: 3%;
+padding-bottom: 1%;
 }
 
-iframe {
-
-    border-radius: 2%;
-
-}
-
-.formulario{
-
-    background-color: blue;
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-bottom: 3%;
+    padding-top: 2%;
 
 }
 
-@media only screen and (max-width: 1200px) {
+.nombre {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+#contacto{
+background-color: rgb(255, 255, 255);
+}
+.contactoI {
+ 
+ 
+    text-align: center;
+ 
+
+}
+.contactoII {
+ 
+    
+    text-align: center;
+ 
+
+}
+footer {
+
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+}
+
+h6 {
+    color: rgb(55, 3, 3);
+    font-size: 20px;
+    padding-right: 40px;
+    padding-left: 20px;
+
+}
+
+small {
+    color: #191818;
+
+}
+
+
+.derechos {
+    text-align: center;
+
+}
+
+
+
+
+@media only screen and (max-width: 1350px) {
 
     h1 {
-
-        font-size: 2em;
-
-
-    }
-
-    h3 {
-
-        font-size: 1em;
-
-
-
-    }
-
-    .texto {
-
-        font-size: 0.8em;
-
-
-    }
-
-    h2 {
-        font-size: 1em;
-
-    }
-
-    .contenedor {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-flow: 100%;
-        padding-bottom: 2%;
-
-
-
-    }
-
-}
-
-@media only screen and (max-width: 600px) {
-
-
-    iframe {
-
-        width: 100%;
-
-
-    }
-
-    .clip {
-        font-size: 0.8em;
-
-    }
-
-    .clip2 {
-
-        display: none !important;
-
-    }
-
-    .todo {
-
-        position: absolute;
-        margin-top: 12%;
-    }
-
-    i {
+     
+        font-size: 3em;
         
-        padding: 2%;
-    
     }
     
-h6{
-    font-size: 0.6em;
+    h3 {
+     
+        font-size: 1em;
+      
+    
+    }
+ 
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+
+}
+h5 {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+
+}
+h4 {
+    font-size: 30px;
 }
 
+.primero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align:center;
+
+
+
+}
+
+.Tvideo1 {
+
+   
+  
+    width: 300px;
+    text-align:left;
+ padding-left: 12px;
+ padding-right: 12px;
+  
+
+}
+
+.online {
+
+    display: none;
+
+}
+
+
+
+
+.segundo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align:center;
+
+
+
+}
+
+.Tvideo3 {
+    width: 300px;
+    text-align:left;
+ padding-left: 12px;
+ padding-right: 12px;
+
+
+}
+
+.Tvideo4 {
+    width: 300px;
+    text-align:left;
+ padding-left: 12px;
+ padding-right: 12px;
+
+
+}
+
+
+.tercero {
+    display: none;
+    
+
+}
+
+
+
+.teaser {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align:center;
+
+
+
+}
+
+.babel {
+    display: none;
+
+
+}
+
+.Tvideo7 {
+    width: 300px;
+    text-align:left;
+ padding-left: 12px;
+ padding-right: 12px;
+
+
+}
+
+.Tvideo8 {
+    width: 300px;
+    text-align:left;
+ padding-left: 12px;
+ padding-right: 12px;
+
+
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .todo {
+        margin-top: 10px;
+    }
+    iframe {
+        padding-bottom: 1%;
+        width: 100%;
+    }
 
 h1 {
- 
-    font-size: 1.5em;
+     
+        font-size: 2em;
+        
+    }
+  
+    .fondo {
+        width: auto;
+        height: 50vh;
+        opacity: 70%;
+       
     
+    }
 
+    p{
+        color: rgb(255, 255, 255);
+    }
+    .texto{
+        width: 100%;
+        padding-right: 15px;
+    }
+
+i{
+    font-size: 150%;
+    padding-bottom: 10px;
 }
-h3 {
 
-    font-size: 0.8em;
+    
+    .nombre {
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    
+    }
+    
+ 
+    
+  
+    
+    h6 {
+        color: rgb(55, 3, 3);
+        font-size: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+    
+    }
+    small{
+        font-size: 10px;
+    }
 
+    h4{
 
+        font-size: 25px;
 
-}
-
+    }
 }
