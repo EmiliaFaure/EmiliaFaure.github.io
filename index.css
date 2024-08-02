@@ -122,7 +122,7 @@ p{
 }
 
 .botones{
-    padding-bottom: 20%;
+    padding-bottom: 15%;
 }
 
 .edicion{
@@ -226,7 +226,10 @@ img{
 
 
 width: 100%;
-margin-left: 4%;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+place-items:center; 
+
 padding-bottom: 4%;
 
 
@@ -238,9 +241,11 @@ padding-bottom: 4%;
   }
 
   .prototipo{
-padding-top: 1%;
-    padding-left: 5%;
-    padding-bottom: 0,5%;
+text-align: center;
+padding: 1%;
+
+   
+
   }
 .protoVideo{
 
@@ -251,6 +256,7 @@ padding-top: 1%;
   
 
 }
+
 
 
   @media only screen and (max-width: 1350px){
