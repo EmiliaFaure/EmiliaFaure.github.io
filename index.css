@@ -1,437 +1,522 @@
-body {
-    margin: 0;
-    padding: 0;
-  background-color: rgb(0, 0, 0);
+<!DOCTYPE html>
+<html lang="en">
 
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-a {
-    text-decoration: none;
-}
-
-video{
-    width: 100%;
-}
-
-.reel {
-    position: absolute;
-
-padding-bottom: 1%;
-
-
-}
-
-.presentacion{
-
-    display: grid;
-    place-items:center;
-    margin-top: 8%;
-}
-.emi-texto{
-
-    text-align: center;
-   
-}
-
-.bio{
-    position:relative;
-    width: 110vh;
-    height: 80vh;
-    background: url(/flor.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    
-    margin-top: 31%;
+  <title>EMILIA FAURE</title>
 
 
 
-}
+  <!--bootstrap --->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 
-.texto-bio{
-padding-left: 4%;
-padding-top: 33%;
-padding-right: 1%;
-width: 150vh;
-
-text-align: justify;
-}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="/index.css" />
 
-.bio-imagen{
- display:flex;
-   
-}
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 
 
-h1{
 
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    letter-spacing: 0.4em;
-    padding-bottom: 1%;
-}
+  <!---animacion-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-h3{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    font-size: 1,5em;
-    letter-spacing: 0.4em;
-    padding-bottom: 1%;
-}
 
-i{
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/14b1b88f84.js" crossorigin="anonymous"></script>
 
-    color: rgb(200, 200, 200);
-    font-size: 2em;
-    letter-spacing: 0.6em;
-    padding-left: 2%;
-}
-
-h2{
-   font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    font-size: 2em;
-    letter-spacing: 0.4em;
-    padding-bottom: 1%;
-}
+  <!---Icono-->
+  <link rel="icon" href="">
 
 
 
-h4{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
+</head>
+
+<body>
+  <div class="navegador">
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">EMILIA<strong>FAURE</strong> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Bio">Bio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Porfolio">Porfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+  <!---video  -->
+
+<div class="reel">
+
+  <video class="class=" ratio ratio-16x9 src="/REEL_Web.mp4" autoplay loop muted></video>
   
-    letter-spacing: 0.4em;
-    padding-bottom: 1%;
-}
-
-p{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    padding-bottom: 1%;
-}
-.trabajo{
-    width: 100%;
-    display: grid;
-    place-items:center; 
-  margin-top: 2%;
-padding-top: 4%;
-    background-color: hsl(0, 0%, 11%);
-}
-
-.botones{
-    background-color: hsl(0, 0%, 11%);
-    width: 100%;
-    margin: auto;
-}
+</div>
 
 
-.hoja{
 
-width: 40%;
-   margin: auto;
-   background-color: hsl(0, 0%, 11%);
+  <!---Texto sobre el video  -->
 
-}
-
-.hojaFondo{
-    background-color: hsl(0, 0%, 11%);
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-
-.edicion{
-   
-width: 100%;
-text-align: center;
-    padding-bottom: 4%;
-    padding-top: 6%;
-}
-
-.videos-trabajo{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-auto-flow: 100%;
-text-align: center;
+  <div class="presentacion">
 
     
-}
-
-h6{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-  
-    letter-spacing: 0.2em;
-    padding-bottom: 4%;
-}
-
-h5{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    letter-spacing: 0.2em;
-    padding-bottom: 1%;  
-}
-
-.diseño{
-
-background-color: rgb(255, 255, 255);
-    padding-bottom: 4%;
-    padding-top: 4%;
-  
-}
-
-.titulo{
-text-align: center;
-   
-}
-
-
-span{
-    color: black;
-}
-
-
-
-.programas{
-
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    
-    grid-auto-flow: 100%;
-width: 45vh;
-height: 4vh;
-
-    
-}
-
-
-
-img{
-    object-fit: cover;
-    width:100%;
-    height:100%;
-    padding: 4%;
-  }
-
-  .datos-personales{
-    margin-top: 4%;
-    text-align: center;
-    color: rgb(200, 200, 200);
-  }
-.contactoIconos{
-
-   text-align: center;
-
-color: rgb(200, 200, 200);
-
-
-
-
-}
-  footer{
-
-    text-align: center;
-    color: rgb(200, 200, 200);
-  }
-
-  .home{
-
-    padding-top: 2%;
-
-   padding-bottom: 4%;
-
-  }
-
-  .redes{
-
-
-    padding: 2%;
-  }
-
-
-
-  .corta{
-  
-    width: 50%;
-  }
-
-
-.protoVideo{
-
-    width: 90%;
- 
-    margin: auto;
-
-  
-
-}
-
-.text-center{
-
-padding: 1%;
-
-
-}
-.masTrabajos{
-
-    padding-bottom: 4%;
-}
-
-
-
-
-
-
-
-  @media only screen and (max-width: 1350px){
-
-
-
-    
-
-    .programas{
-
-        display:none;
+    <div class="emi-texto" data-aos="fade-right" >
+      <h1>EMILIA FAURE</h1>
+      <h3>Editora Audiovisual - Diseñadora UX/UI </h3>
+      
+      <a href="https://www.linkedin.com/in/emilia-faure/" target="_blank" rel="noopenen noreferrer">
+        <i class="fa-brands fa-linkedin"> </i> </a>
         
-    }
     
+          
+          <a href="https://youtube.com/playlist?list=PL9HR3BRjpwkFvsv3oQRqqSF8LJaZCzE_a" target="_blank"
+          rel="noopenen noreferrer">
+          <i class="fa-brands fa-youtube"></i> </a>
 
-.herramientas{
+          <a href="https://www.behance.net/emiliafaure" target="_blank" rel="noopenen noreferrer">
+          
+            <i class="fa-brands fa-square-behance"></i> </a>
+          
+        </div>
+        
+      </div>
+      
+  
 
-    display: none;
-}
 
+  <!---BIO  -->
 
-.videos-trabajo{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    grid-auto-flow: 100%;
-text-align: center;
+  
+  <div id="Bio">
     
-}
+<div class="bio-imagen">
+
+  
+ 
+  
+  <div class="texto-bio">
+    
+    <h2>SOBRE MI</h2>
+
+    <div class="texto-largo">
+
+   
+    
+    <p> Estudié la carrera de diseño de imagen y sonido en la Universidad de Buenos Aires (UBA). 
+      En 2009, decidí convertirme en editora audiovisual independiente. Desde entonces, he trabajado 
+      como freelancer dando vida a diversas piezas 
+      audiovisuales y como asistente de post-producción en largometrajes. 
+      Actualmente, estudio Full Stack y Diseño UX/UI, ampliando mis habilidades y aplicando mi creatividad en el desarrollo 
+      de aplicaciones web. 
+      
+    </p>
+
+    </div>
+
+   
 
 
-  }
+<div class="herramientas">
+  <h2>Herramientas que utilizo</h2>
 
-  @media only screen and (max-width: 540px){
+</div>
 
 
-    iframe {
-        padding-bottom: 1%;
-        width: 360px;
-        height: 215px;
-    }
+
+    <div class="programas">
+
+   
+
+      <div class=premiere>
+        <img src="/premiere_5611084.png">
+      </div>
+
+ <div class="photoshop">
+  <img  src="/photoshop_5968520.png">
+ </div>
+
+ <div class="ilustrator">
+  <img src="/illustrator_5968472.png">
+ </div>
+ 
+ <div class="after">
+  <img src="/after-effects_5968428.png">
+ </div>
+ 
+ <div class="davinci">
+  <img src="/DaVinci_Resolve_Studio.png">
+ </div>
+ 
+ <div class="figma">
+  <img  src="/figma_5968705.png">
+ </div>
+ 
+      
+    </div>
 
     
+  </div>
+     <!--- Flor-->
 
-    h1{
-        font-size: 1,5em;
-        letter-spacing: 0.4em;
-      
-    }
+  <div class="bio" >
+  
+  </div>
+  
+</div>
+
+
+  <div id="Porfolio">
+
+
+<div class="trabajo">
+
+  <h4> ALGUNOS DE MIS TRABAJOS</h4>
+  
+</div>
+</div>
+
+<div class="botones">
+<div class="text-center">
+ 
+ <a href="#EdicionAV">
+  <button type="button" class="btn btn-outline-light">Edición Audiovisiual</button></a>
+
+  <a href="#uxui">
+  <button type="button" class="btn btn-outline-light">Diseño UX/UI</button></a>
+  
+
+</div>
     
-    h3{
-      
-        font-size: 1em;
-        letter-spacing: 0.4em;
-      
-    }
+</div>
+<div class="hojaFondo">
+
+
+<div class="hoja">
+  <img  src="/Hoja.jpg">
+ </div>
+
+</div>     
+
+
+
+
+
+   <div id="EdicionAV" >
+
+<div class="edicion">
+<h4> Edición Audiovisual</h4>
+</div>  
+</div>
+
+
+<div class="videos-trabajo">
+
+  
+ <!---AMIA-->
+
+<div class="class=" ratio ratio-16x9>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kdLQUQA8meU?si=fXwLhal1NztgMarZ" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <h5>Mural "Colores de Amia" de David Petroni</h5>
+  <h6><em>-AMIA-</em></h6>
+  </div>
+  
+
+  <!---Katja-->
+          
+ <div class="class=" ratio ratio-16x9>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/iDbx_2hJ6uM?si=aQ-_JMhFQl-_MF5Z"
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen></iframe>
+  
+  <h5>Shambhala</h5>
+  <h6><em>-Katja Alemann-</em></h6>
+</div>
+
+
+     <!--- Arte online-->
+        
+        
+     <div class="class=" ratio ratio-16x9>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ckqM_1Wawoo?si=VvYF2bBMu4mqaO9B"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+        picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+        
+        <h5>Homenaje a Ides Kihlen</h5>
+        <h6><em>- Arte OnLine -</em></h6>
+      </div>
+  
+           
+
+
+<!---Año chino-->
+          
+          
+<div class="class=" ratio ratio-16x9>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ri3096N3w30?si=ikkIyt5PbEl4QFe2"
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+  gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen></iframe>
+  
+  <h5>Año nuevo chino</h5>
+  <h6><em>- Phoenix Dorada International Media Company - </em></h6>
+  
+</div>
+
+
+
+
+</div>
+
+
+<div class="masTrabajos">
+
+
+
+<div class="text-center">
+
+  <a href="https://youtube.com/playlist?list=PL9HR3BRjpwkFvsv3oQRqqSF8LJaZCzE_a" target="_blank" rel="noopenen noreferrer">
+    <button type="button" class="btn btn-outline-light">Ver más Trabajos</button></a>
+
+ </div>     
+
+</div>
+
+<div id="uxui">
+<div class="diseño">
+
+  <div class="titulo">
+
+    <h4><span>Diseño UX/UI</span> </h4>
+  </div>
+
+
+<div class="closet">
+
+  <div>
+    <img  src="/1_Portada.png">
+   </div>
+
+  </div>
+
+     <!---video  -->
+
+<div class="protoVideo">
+
+  <div>
+    <video class="class=" ratio ratio-16x9 src="/Prototipo.mp4" autoplay loop muted></video>
     
-    h2{
-      
-        font-size: 1em;
-        letter-spacing: 0.4em;
-      
-    }
+  </div>
 
-    h4{
-      
-        font-size: 1em;
-        letter-spacing: 0.4em;
-      
-    }
+</div>
 
-    h5{
-      
-        font-size: 1em;
-        letter-spacing: 0.4em;
-      
-    }
-    h6{
-      
-        font-size: 1em;
-        letter-spacing: 0.4em;
-      
-    }
+
+
+<div class="text-center">
+  
+  <a href="https://www.behance.net/gallery/203713395/Closet-Style" 
+  target="_blank" rel="noopenen noreferrer">
+
+  <button type="button" class="btn btn-outline-dark">Ver trabajo completo</button></a>
+
+  
+
+
+  <a href="https://www.figma.com/proto/vSQEW0Ex7KyH282AwEXut0/ClosetStyle_Prototipo?node-id=239-2511&t=pF1oB8B4lrcA6duu-0&scaling=min-zoom&content-scaling=fixed&page-id=204%3A4417&starting-point-node-id=239%3A2511" 
+  target="_blank" rel="noopenen noreferrer">
+  <button type="button" class="btn btn-outline-dark">Prototipo</button></a>
+
+</div>
+
+
+  
+</div>
+
+
+
+
+  <div id="contacto">
+
+
+
+
+    <div class="datos-personales">
+
+      <h4>Contacto</h4>
+    
+    </div>
+   
+
+
+<div class="formulario">
+
+<form action="https://formsubmit.co/emiliafaure@gmail.com" method="POST">
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@mail.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+    <textarea name="mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <input type="submit" class="btn btn-outline-light" value="Enviar">
+
+  <input type="hidden" name="_next" value="https://emiliafaure.github.io/">
+  <input type="hidden" name="_captcha" value="false">
+ 
+</form>
+
+
+
+</div>
+    
+    <div class="contactoIconos">
+
+  
+
+      <a href="mailto:emiliafaure@gmail.com" target="_blank" rel="noopenen noreferrer">
+        <i class="fa-regular fa-envelope"> </i> </a> 
+        <small class="mailTel">emiliafaure@gmail.com</small>
  
 
-    .texto-bio{
-    
-        padding-top: 25%;
-       margin-right: 1%;
-      
 
-        }
-        
    
-    .bio{
-   
-    margin-top: 17%;
-    }
-        i{
+        <a href="https://api.whatsapp.com/send?phone=5491151247962" class="whatsapp" target="_blank"
+        rel="noopenen noreferrer">
+        <i class="fa-brands fa-whatsapp"> </i></a>
+
+<small class="mailTel"> 54 9 1151247962</small>
+
 
        
-            font-size: 170%;
-            letter-spacing: 0.6em;
-            padding-left: 2%;
-            padding-bottom: 8%;
+
+   
+    </div>
+
+       
+       
+   </div>
         
-        }
-        .datos-personales{
-            
-        text-align:center;
-        
-          }
-.contactoIconos{
-
-display: grid;
-grid-template-columns: repeat(2, 12%);
-
-padding-bottom: 4%;
-margin-left: 6%;
-
-}
-          .protoVideo{
-
-            width: 100%;
+      
+    
+           
+    
+    
+    
          
+    
+    
+    <footer>
+    
+   
+      
+      <div class="redes">
+    
+        <a href="https://www.linkedin.com/in/emilia-faure/" target="_blank" rel="noopenen noreferrer">
+      
+          <i class="fa-brands fa-linkedin"> </i> </a> 
 
+
+          <a href="https://www.behance.net/emiliafaure" target="_blank" rel="noopenen noreferrer">
+          
+            <i class="fa-brands fa-square-behance"></i> </a>
+            
+            <a href="https://github.com/EmiliaFaure" target="_blank" rel="noopenen noreferrer">
+              <i class="fa-brands fa-github"></i></a>
+
+            
+    
+          <a href="https://vimeo.com/emiliafaure" target="_blank" rel="noopenen noreferrer">
+            <i class="fa-brands fa-vimeo"></i> </a> 
+    
+        <a href="https://www.instagram.com/emiliafaure/" target="_blank" rel="noopenen noreferrer">
+        <i class="fa-brands fa-instagram"></i></a>
         
-        }
-
-       h1{
-
-        display: none;
-       }
-
-       .hoja{
-
-        width: 100%;
-           margin: auto;
-           background-color: hsl(0, 0%, 18%);
-        
-        }
-
-        .trabajo{
-         text-align: center;
-        }
+     
+        <a href="https://www.facebook.com/emilia.faure" target="_blank" rel="noopenen noreferrer">
+        <i class="fa-brands fa-facebook"></i></a>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    <div class="home">
+    
         
 
+      <a href= "/index.html"> <h6>| EMILIA<strong>FAURE |</strong></h6></a> 
 
-  }
+      
+    </div>
+    
+    
+    <div class="derechos">
+    
+     <small> Copyright © 2024 <b>Emilia Faure</b> - Todos los derechos reservados.</small>
+    
+    </div>
+    
+    </footer>
+    
+    
+    
+        </div>
+    
+
+
+
+
+
+
+    <!--animacion--->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+
+    </script>
+
+
+</body>
+
+</html>
