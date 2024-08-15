@@ -106,7 +106,6 @@ a {
 }
 
 
-
 video {
     width: 100%;
 }
@@ -152,7 +151,6 @@ video {
     text-align: justify;
 }
 
-
 .bio-imagen {
     display: flex;
 
@@ -190,8 +188,6 @@ h2 {
     padding-bottom: 1%;
 }
 
-
-
 h4 {
     font-family: "Montserrat", sans-serif;
     color: rgb(200, 200, 200);
@@ -207,28 +203,25 @@ p {
 }
 
 .trabajo {
-    width: 40%;
+    width: 50%;
     margin: auto;
 
 }
 
 .botones {
  
-    margin: auto;
-    display: flex;
+margin: auto;
+display: flex;
 }
 
 
 
 .botonAV{
-width: 50%;
+    width: 50%;
     text-align: right;
     padding-left: 1%;
 
-
 }
-
-
 
 .botonUIux{
     width: 50%;
@@ -249,9 +242,6 @@ width: 50%;
 #Porfolio{
 
 background-color: rgb(21, 21, 21);
-
-
-
 
 }
 .edicion {
@@ -305,21 +295,16 @@ span {
     color: black;
 }
 
-
-
 .programas {
 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-
     grid-auto-flow: 100%;
     width: 45vh;
     height: 4vh;
 
 
 }
-
-
 
 img {
     object-fit: cover;
@@ -335,13 +320,9 @@ img {
 }
 
 .contactoIconos {
-
     text-align: center;
     margin-top: 2%;
     color: rgb(200, 200, 200);
-
-
-
 
 }
 
@@ -354,7 +335,6 @@ footer {
 .home {
 
     padding-top: 2%;
-
     padding-bottom: 4%;
 
 }
@@ -363,14 +343,12 @@ footer {
 
     width: 50%;
     margin: auto;
-
     padding-bottom: 1%;
     color: aliceblue;
 
 }
 
 .redes {
-
     padding: 2%;
 }
 
@@ -385,7 +363,6 @@ footer {
 .protoVideo {
 
     width: 90%;
-
     margin: auto;
 
 
@@ -395,8 +372,6 @@ footer {
 .text-center {
 
     padding: 1%;
-
-
 }
 
 .masTrabajos {
@@ -407,16 +382,11 @@ footer {
 /* TABLET */
 @media (min-width:768px) {
 
-
-
     .navbar {
         --state-close: scale(0);
         --state-burger: scale(0);
 
     }
-
-
-
 
     #nav:target {
         --state-close: scale(0);
@@ -433,22 +403,25 @@ footer {
         padding: 0;
         background-color: unset;
         position: unset;
-
         gap: 1.25em;
-
         transform: unset;
-
         grid-column: -2/-1;
         grid-row: 1/2;
         grid-auto-flow: column;
-
         height: unset;
-
         font-size: 1rem;
         gap: 1.5em;
         text-align: right;
 
     }
+    .trabajo {
+
+        width: 50%;
+        margin: auto;
+       
+
+    }
+
 }
 
 
@@ -462,14 +435,12 @@ footer {
 
 
     .programas {
-
         display: none;
 
     }
 
 
     .herramientas {
-
         display: none;
     }
 
@@ -481,6 +452,11 @@ footer {
         grid-auto-flow: 100%;
         text-align: center;
 
+    }
+    .trabajo {
+
+        width: 50%;
+        margin: auto;
     }
 
 
@@ -496,7 +472,6 @@ footer {
     }
 
 
-
     h1 {
         font-size: 1, 5em;
         letter-spacing: 0.4em;
@@ -504,35 +479,30 @@ footer {
     }
 
     h3 {
-
         font-size: 1em;
         letter-spacing: 0.4em;
 
     }
 
     h2 {
-
         font-size: 1em;
         letter-spacing: 0.4em;
 
     }
 
     h4 {
-
         font-size: 1em;
         letter-spacing: 0.4em;
 
     }
 
     h5 {
-
         font-size: 1em;
         letter-spacing: 0.4em;
 
     }
 
     h6 {
-
         font-size: 1em;
         letter-spacing: 0.4em;
 
@@ -540,22 +510,17 @@ footer {
 
 
     .texto-bio {
-
         padding-top: 25%;
         margin-right: 1%;
-
 
     }
 
 
     .bio {
-
         margin-top: 17%;
     }
 
     i {
-
-
         font-size: 170%;
         letter-spacing: 0.6em;
         padding-left: 2%;
@@ -564,26 +529,17 @@ footer {
     }
 
     .datos-personales {
-
         text-align: center;
 
     }
 
     .contactoIconos {
-
-
         padding-top: 4%;
-
-
 
     }
 
     .protoVideo {
-
         width: 100%;
-
-
-
     }
 
     h1 {
@@ -595,17 +551,13 @@ footer {
 
         width: 100%;
         margin: auto;
-       
-
     }
 
-    .trabajo {
-        text-align: center;
-    }
+    
 
     .botonAV{
         width: 50%;
-            text-align: right;
+        text-align: right;
 
         
         margin: auto;
@@ -615,15 +567,12 @@ footer {
         
         .botonUIux{
             width: 50%;
-                text-align: center;
-                padding-left: 1%;
-                margin: auto;
+            text-align: center;
+            padding-left: 1%;
+            margin: auto;
               
             }
         
-
-
-
     .mailTel {
         display: none;
     }
@@ -640,4 +589,11 @@ footer {
     .nav-links {
         font-size: 1.2rem;
     }
+
+    .trabajo {
+
+        width: 50%;
+        margin: auto;
+    }
+    
 }
