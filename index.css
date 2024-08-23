@@ -133,7 +133,7 @@ video {
 }
 
 .emi-texto {
-padding-top: 8%;
+padding-top: 3%;
     text-align: center;
 
 }
@@ -147,7 +147,7 @@ padding-top: 8%;
     background-position: center center;
     background-repeat: no-repeat;
 
-    margin-top: 30%;
+    margin-top: 35%;
 
 
 
@@ -155,7 +155,7 @@ padding-top: 8%;
 
 .texto-bio {
     padding-left: 4%;
-    padding-top: 30%;
+    padding-top: 35%;
     padding-right: 1%;
     width: 150vh;
 
