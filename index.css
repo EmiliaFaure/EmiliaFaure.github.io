@@ -129,7 +129,7 @@ video {
 
     display: grid;
     place-items: center;
-    margin-top: 8%;
+    margin-top: 6%;
 }
 
 .emi-texto {
@@ -147,7 +147,7 @@ padding-top: 8%;
     background-position: center center;
     background-repeat: no-repeat;
 
-    margin-top: 25%;
+    margin-top: 30%;
 
 
 
@@ -155,7 +155,7 @@ padding-top: 8%;
 
 .texto-bio {
     padding-left: 4%;
-    padding-top: 25%;
+    padding-top: 30%;
     padding-right: 1%;
     width: 150vh;
 
