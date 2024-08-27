@@ -262,11 +262,14 @@ width: 50%;
 #Porfolio{
 
 background-color: rgb(21, 21, 21);
-
-
-
-
 }
+
+.videoBoton{
+
+padding-bottom: 2%;
+}
+
+
 .edicion {
 
     width: 100%;
@@ -281,6 +284,7 @@ background-color: rgb(21, 21, 21);
     grid-template-columns: repeat(2, 2fr);
     grid-auto-flow: 100%;
     text-align: center;
+
 
 
 }
