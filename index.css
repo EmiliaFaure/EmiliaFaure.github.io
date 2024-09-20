@@ -157,7 +157,7 @@ flex: 1;
 #video-fondo {
 
     position: absolute;
-width: 100%;
+    width: 100%;
 
 
 
@@ -275,9 +275,7 @@ width: 100%;
 
 }
 
-/* Nav y Video */
-
-
+/* biografia */
 
 
 .emi-texto {
@@ -360,9 +358,9 @@ h2 {
 h4 {
     font-family: "Montserrat", sans-serif;
     color: rgb(200, 200, 200);
-
     letter-spacing: 0.4em;
     padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 p {
@@ -371,10 +369,18 @@ p {
     padding-bottom: 1%;
 }
 
-.trabajo {
+.trabajo { /* hoja */
+
     width: 50%;
     margin: auto;
 
+}
+.trabajo img {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 4%;
 }
 
 .botones {
@@ -402,6 +408,9 @@ width: 50%;
      
     }
 
+
+
+    
 .tituloTrabajo{
 
  padding-top: 4%;
@@ -416,13 +425,10 @@ width: 50%;
 background-color: rgb(21, 21, 21);
 }
 
-.videoBoton{
-
-padding-bottom: 2%;
-}
 
 
-.edicion {
+
+.edicion { /* titulo */
 
     width: 100%;
     text-align: center;
@@ -430,30 +436,161 @@ padding-bottom: 2%;
     padding-top: 6%;
 }
 
-.videos-trabajo {
-    width: 100%;
+ /* nuevo */
+
+.edicionAudiovisual{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-auto-flow: 100%;
-    text-align: center;
-
+    grid-template-columns: auto auto;
+    gap: 25px;
+    padding-bottom: 2%;
+    width: 100%;
+    margin: auto;
 
 
 }
 
-h6 {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
+.arteOnline{
 
-    letter-spacing: 0.2em;
-    padding-bottom: 4%;
+    width: 700px;
+    height: 350px;
+    background: url(/ArteOnline.png);
+    background-size: cover cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+align-items: center;
+display: flex;
+justify-content: center;
+margin: auto;
+border-radius: 10px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+transition: all 0.25s;
 }
 
-h5 {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    letter-spacing: 0.2em;
-    padding-bottom: 1%;
+.contenedor-portadas :hover {
+    transform: scale(1.02);
+
+}
+
+.arteOnline i{
+
+    color: #ffffff;
+    font-size: 80px;
+
+}
+
+.arteOnline i:hover{
+
+    color: #eeb50c;
+}
+
+
+.amia{
+    width: 700px;
+    height: 350px;
+    background: url(Amia.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+align-items: center;
+display: flex;
+justify-content: center;
+margin: auto;
+border-radius: 10px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+transition: all 0.25s;
+}
+
+.amia i{
+
+    color: #ffffff;
+    font-size: 80px;
+
+    
+}
+
+.amia i:hover{
+
+    color: #eeb50c;
+}
+
+.katja{
+
+    width: 700px;
+    height: 350px;
+    background: url(/Katja.png);
+    background-size: cover cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+align-items: center;
+display: flex;
+justify-content: center;
+margin: auto;
+border-radius: 10px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+transition: all 0.25s;
+}
+
+.katja i{
+
+    color: #ffffff;
+    font-size: 80px;
+}
+
+
+
+.katja i:hover{
+
+    color: #eeb50c;
+}
+
+
+.chinos{
+    width: 700px;
+    height: 350px;
+    background: url(/AñoChino.png);
+    background-size: cover cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+align-items: center;
+display: flex;
+justify-content: center;
+margin: auto;
+border-radius: 10px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+transition: all 0.25s;
+}
+
+.chinos i{
+
+    color: #ffffff;
+    font-size: 80px;
+}
+
+
+.chinos i:hover{
+
+    color: #eeb50c;
+}
+
+.edicionAudiovisual-responsive{
+    display: none;
+
+}
+
+.masTrabajos-responsive{
+    display: none;
+}
+
+.masTrabajos{
+width: 100%;
+align-items: center;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding-bottom: 2%;
 }
 
 .diseño {
@@ -489,12 +626,21 @@ span {
 }
 
 
-
-img {
+.programas img{
+    
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        padding: 4%;
+    
+    
+}
+.potadaCloset{
     object-fit: cover;
     width: 100%;
     height: 100%;
     padding: 4%;
+
 }
 
 .datos-personales {
@@ -503,14 +649,48 @@ img {
     color: rgb(200, 200, 200);
 }
 
+
+
 .contactoIconos {
+display: grid;
+grid-template-columns: auto auto auto auto;
+width: 30%;
 
-    text-align: center;
-    margin-top: 2%;
+  
     color: rgb(200, 200, 200);
+margin: auto;
+padding-top: 2%;
+align-items: center;
 
 
+}
 
+.contactoIconos i{
+    font-size: 40px;
+    
+}
+
+.contactoIconos i:hover{
+    color: #ce9a00;
+    
+}
+
+.mail-emi{
+  
+  padding-top: 8px;
+}
+.tel-emi{
+    padding-top: 8px;
+
+}
+
+.fa-whatsapp{
+    padding-left: 10px;
+}
+.fa-envelope{
+
+
+ padding-left: 10px;
 
 }
 
@@ -520,10 +700,14 @@ footer {
     color: rgb(200, 200, 200);
 }
 
+
+footer i:hover{
+color: #ce9a00;
+
+}
 .home {
 
     padding-top: 2%;
-
     padding-bottom: 4%;
 
 }
@@ -532,7 +716,6 @@ footer {
 
     width: 50%;
     margin: auto;
-
     padding-bottom: 1%;
     color: aliceblue;
 
@@ -554,9 +737,7 @@ footer {
 .protoVideo {
 
     width: 100%;
-
     margin: auto;
-
 text-align: center;
 
 
@@ -575,10 +756,6 @@ video{
 
 }
 
-.masTrabajos {
-
-    padding-bottom: 4%;
-}
 
 
 .derechos{
@@ -586,56 +763,301 @@ video{
 
     padding-top: 2%;
 }
-/* TABLET */
-@media (min-width:768px) {
 
 
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+ /* nuevo */
+
+ .edicionAudiovisual{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+    padding-bottom: 2%;
+    width: 100%;
+    margin: auto;
+
+
+}
+
+
+    .trabajo {
+
+        width: 50%;
+        margin: auto;
+       
+
+    }
+
+
+    @media only screen and (max-width: 748px) {
+
+        .arteOnline{
+
+            width: 650px;
+            height: 350px;
+
+        }
+        
+     
+        
+        .amia{
+            width: 650px;
+            height: 350px;
    
-    .trabajo {
-
-        width: 50%;
-        margin: auto;
+        }
+        
+    
+        
+        .katja{
+        
+            width: 650px;
+            height: 350px;
        
-
+        
+        }
+        
+     
+        
+      
+        
+        .chinos{
+            width: 650px;
+            height: 350px;
+    
+        }
+        
+        
     }
 
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 666px) {
+
+        
+.edicionAudiovisual{
+    display: none;
 }
 
-
-
-
-
-@media only screen and (max-width: 1350px) {
-
-
-    .videos-trabajo {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        grid-auto-flow: 100%;
-        text-align: center;
-
-    }
-    .trabajo {
-
-        width: 50%;
-        margin: auto;
-       
-
-    }
-
-
+.masTrabajos{
+    display: none;
 }
+
+        .edicionAudiovisual-responsive{
+
+            display: inline ;
+        }
+
+        .masTrabajos-responsive{
+            display: inline ;
+        }
+
+        .arteOnline-responsive{
+
+            width: 550px;
+            height: 350px;
+            background: url(/ArteOnline_550.png);
+            background-size: cover cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+        }
+
+
+        .arteOnline-responsive i{
+
+            color: #ffffff;
+            font-size: 40px;
+            background-color: transparent;
+        }
+        
+        .arteOnline-responsivei:hover{
+        
+            color: #eeb50c;
+        }
+        
+
+        .amia-responsive{
+
+            width: 550px;
+            height: 350px;
+            background: url(/Amia550.png);
+            background-size: cover cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+        }
+
+
+        .amia-responsive i{
+
+            color: #ffffff;
+            font-size: 40px;
+            background-color: transparent;
+        }
+        
+        .amia-responsivei:hover{
+        
+            color: #eeb50c;
+        }
+        
+        .katja-responsive{
+
+            width: 550px;
+            height: 350px;
+            background: url(/Katja_550.png);
+            background-size: cover cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+        }
+
+
+        .katja-responsive i{
+
+            color: #ffffff;
+            font-size: 40px;
+            background-color: transparent;
+        }
+        
+        .katja-responsivei:hover{
+        
+            color: #eeb50c;
+        }
+
+        .chinos-responsive{
+
+            width: 550px;
+            height: 350px;
+            background: url(/AñoChino_550.png);
+            background-size: cover cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+        }
+
+
+        .chinos-responsive i{
+
+            color: #ffffff;
+            font-size: 40px;
+            background-color: transparent;
+        }
+        
+        .chinos-responsivei:hover{
+        
+            color: #eeb50c;
+        }
+      
+    }
+
+
+
+
+
 
 @media only screen and (max-width: 540px) {
+    .contactoIconos i{
+    
+        font-size: 30px;
 
+        }
+
+ 
+        .contactoIconos {
+        
+            width: 100%;
+       padding-bottom: 2%;
+
+          
+        }
+
+
+.formulario{
    
+    width: 80%;
+}
 
-    iframe {
-        padding-bottom: 1%;
-        width: 360px;
-        height: 215px;
-    }
+ .arteOnline-responsive{
+
+    width: 350px;
+    height: 150px;
+
+
+
+}
+
+
+
+.amia-responsive{
+    width: 350px;
+    height: 150px;
+
+}
+
+
+
+.katja-responsive{
+
+    width: 350px;
+    height: 150px;
+
+
+
+}
+
+
+
+
+
+.chinos-responsive{
+    width: 350px;
+    height: 150px;
+
+
+}
+
+
 
 
 
@@ -668,18 +1090,12 @@ video{
 
     }
 
-    h6 {
-
-        font-size: 1em;
-        letter-spacing: 0.4em;
-
-    }
-
+   
 
     .texto-bio {
 
       
-width: 50%;
+    width: 50%;
 
 
     }
@@ -694,7 +1110,7 @@ width: 50%;
         
    
     .programas{
-display: none;
+    display: none;
 
     }
 
@@ -721,14 +1137,7 @@ display: none;
 
     }
 
-    .contactoIconos {
-
-
-        padding-top: 4%;
-
-
-
-    }
+  
 
     .protoVideo {
 
@@ -770,26 +1179,53 @@ display: none;
 
 
 
-    .mailTel {
-        display: none;
-    }
-
 }
 
 /* DESKTOP */
-@media (min-width:800px) {
+@media (max-width:800px) {
 
-   
+  .contactoIconos {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 53%;
+       padding-bottom: 2%;
+          
+        }
 
     
 
     .trabajo {
 
-        width: 50%;
+        width: 100%;
         margin: auto;
        
 
     }
     
 
+}
+
+
+}
+
+@media only screen and (max-width: 320px) {
+   
+ 
+        .contactoIconos {
+        
+            width: 90%;
+       padding-bottom: 2%;
+      
+          
+        }
+
+
+.formulario{
+
+    width: 90%;
+}
+
+i{
+    font-size: 25px;
+}
 }
