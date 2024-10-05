@@ -325,7 +325,7 @@ width: 100%;
 height: 100%;
 margin: 0;
 padding-top: 15%;
-
+background-color: #070707;
 }
 
 
@@ -613,28 +613,14 @@ span {
 
 
 
-.programas {
+.iconos-programas{
 
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-
-    grid-auto-flow: 100%;
-    width: 45vh;
-    height: 4vh;
-
+padding-bottom: 6%;
 
 }
 
 
-.programas img{
-    
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        padding: 4%;
-    
-    
-}
+
 .potadaCloset{
     object-fit: cover;
     width: 100%;
@@ -996,7 +982,25 @@ video{
 
 
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 560px) {
+
+    .bio {
+
+        width: 110vh;
+        height: 60vh;
+        background: url(/flor.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+        margin-top: 35%;
+    
+    
+    
+    }
+   
+
+
     .contactoIconos i{
     
         font-size: 30px;
@@ -1109,16 +1113,7 @@ video{
             }
         
    
-    .programas{
-    display: none;
-
-    }
-
-    .herramientas{
-        display: none;
-        
-            }
-
+   
 
 
     i {
