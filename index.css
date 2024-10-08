@@ -617,9 +617,19 @@ span {
 
 padding-bottom: 4%;
 
+
 }
+.iconos-contacto{
 
 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  width: 30%;
+  padding-bottom: 6%;
+   
+
+
+}
 
 .iconos-contacto i{
 
@@ -1011,8 +1021,7 @@ video{
     
     }
    
-
-
+  
     .contactoIconos i{
     
         font-size: 30px;
@@ -1235,4 +1244,6 @@ video{
 i{
     font-size: 25px;
 }
+
+
 }
