@@ -1,20 +1,22 @@
-body,
-html {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: "Montserrat", sans-serif;
-    background-color: black;
-
-
-}
-
-*{
-
     box-sizing: border-box;
+
 }
-a { 
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
     text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
 }
 
 .abrir-menu,
@@ -23,33 +25,37 @@ a {
 
 }
 
+
+/* nav*/
+
+
 header div,
 header nav,
-header ul{
+header ul {
     display: flex;
     align-items: center;
 }
 
 
-header div{
-    position: fixed;   
+header div {
+    position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     padding: 0.5% 4%;
     z-index: 10;
-    transition: 0.5s linear 0.1s ;
-  
+    transition: 0.5s linear 0.1s;
+
 }
 
-header div.off{
+header div.off {
     transform: translateY(-300px);
 
 }
 
-header div.solid{
-    background-color:rgb(1, 1, 1)
+header div.solid {
+    background-color: rgb(1, 1, 1)
 }
 
 header h4 {
@@ -57,8 +63,8 @@ header h4 {
     font-size: 1.5em;
     color: #dedede;
     letter-spacing: 0.1em;
-text-shadow:black;
-flex: 1;
+    text-shadow: black;
+    flex: 1;
 
 }
 
@@ -67,10 +73,10 @@ flex: 1;
     list-style-type: none;
     display: flex;
     gap: 2rem;
-    margin: 0; 
-    padding: 0; 
-   
-  
+    margin: 0;
+    padding: 0;
+
+
 
 }
 
@@ -79,8 +85,7 @@ flex: 1;
     text-decoration: none;
     color: #dedede;
     font-size: 1.5em;
-    text-shadow:black
-
+    text-shadow: black
 }
 
 .nav-list li a:hover {
@@ -88,66 +93,7 @@ flex: 1;
 }
 
 
-@media screen and (max-width: 800px) {
-
-  
-
-    .abrir-menu,
-    .cerrar-menu {
-
-        display: block;
-        border: 0;
-        font-size: 1rem;
-        background-color: transparent;
-        color: rgb(188, 188, 188);
-
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        background-color: rgb(16, 16, 16);
-        padding: 2rem;
-      
-
-
-    }
-
-
-
-    .nav.visible {
-
-
-        opacity: 1;
-        visibility: visible;
-
-    }
-
-    .nav-list {
-
-        flex-direction: column;
-        align-items: end;
-    }
-
-
-    header h4 {
-
-        font-size: 1.3em;
-
-
-    }
-
-
-}
-
+/* nav*/
 
 
 /* Video y texto */
@@ -156,12 +102,8 @@ flex: 1;
 
 #video-fondo {
 
-    position: absolute;
+    position: relative;
     width: 100%;
-
-
-
-
 }
 
 .texto-emi {
@@ -198,273 +140,197 @@ flex: 1;
     padding-top: 1%;
 }
 
+.contenedor-bio {
 
+    width: 100%;
 
-
-
-
-
-
-
-
-@media screen and (max-width: 1100px) {
-
-    .texto-emi {
-
-        top: 20%;
-
-    }
-
-    .texto-emi h1 {
-
-        font-size: 2em;
-
-
-
-    }
-
-    .texto-emi h3 {
-
-        font-size: 1em;
-
-
-    }
-
-    .texto-emi i {
-
-
-        font-size: 1.5em;
-    }
-
-
-}
-
-@media screen and (max-width: 600px) {
-
-    .texto-emi {
-
-
-        top: 10%;
-
-
-
-    }
-
-    .texto-emi h1 {
-
-        display: none;
-
-
-
-    }
-
-    .texto-emi h3 {
-
-        font-size: 1em;
-
-
-    }
-
-    .texto-emi i {
-
-
-        font-size: 1.5em;
-    }
-
-
-
-}
-
-/* biografia */
-
-
-.emi-texto {
-padding-top: 3%;
-    text-align: center;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
 }
 
 .bio {
 
-    width: 110vh;
-    height: 80vh;
-    background: url(/flor.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: start;
 
-    margin-top: 35%;
+    width: 900px;
+    height: 800px;
+
+    color: rgb(214, 214, 214);
+
+
 
 
 
 }
 
+.bio h2 {
+
+    letter-spacing: 0.4em;
+
+    padding-top: 4%;
+}
+
+.bio h3 {
+
+    font-size: 25px;
+}
+
 .texto-bio {
-    padding-left: 4%;
-    padding-top: 35%;
-    padding-right: 1%;
-    width: 150vh;
+
+    width: 90%;
+
+}
+
+.texto-bio p {
 
     text-align: justify;
 }
 
 
 
-.bio-imagen {
+
+.iconos-contacto {
+
     display: flex;
-    position: relative;
+    gap: 10px;
+    font-size: 40px;
+
+}
+
+.flor {
+
+    width: 100%;
+
+
+}
+
+
+.iconos-contacto i:hover {
+
+    color: #eeb50c;
+}
+
+
+.iconos-programas {
+
+    font-size: 40px;
+    padding-bottom: 20px;
 
 }
 
 
 
 
-#Bio{
- 
-width: 100%;
-height: 100%;
-margin: 0;
-padding-top: 15%;
-background-color: #070707;
-}
+.porfolio {
 
 
-h3 {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    font-size: 1, 5em;
-    letter-spacing: 0.4em;
-    padding-bottom: 1%;
-}
-
-i {
-
-    color: rgb(200, 200, 200);
+    text-align: center;
     font-size: 2em;
-    letter-spacing: 0.6em;
-    padding-left: 2%;
-}
-
-h2 {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    font-size: 2em;
-    letter-spacing: 0.4em;
-    padding-bottom: 1%;
-}
-
-
-
-h4 {
-    font-family: "Montserrat", sans-serif;
     color: rgb(200, 200, 200);
     letter-spacing: 0.4em;
-    padding-bottom: 1%;
-    padding-top: 1%;
-}
-
-p {
-    font-family: "Montserrat", sans-serif;
-    color: rgb(200, 200, 200);
-    padding-bottom: 1%;
-}
-
-.trabajo { /* hoja */
-
-    width: 50%;
     margin: auto;
 
-}
-.trabajo img {
+    padding-top: 2%;
 
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    padding: 4%;
+
 }
 
 .botones {
- 
+
+    display: flex;
     margin: auto;
-display: flex;
-}
-
-
-
-.botonAV{
-width: 50%;
-    text-align: right;
-    padding-left: 1%;
-
+    gap: 40px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
 
 }
 
+.botones-2 {
 
-
-.botonUIux{
-    width: 50%;
-        text-align: left;
-        padding-left: 1%;
-     
-    }
-
-
-
-    
-.tituloTrabajo{
-
- padding-top: 4%;
- padding-bottom: 1%;
-    text-align:center;
+    display: flex;
     margin: auto;
-  width: 100%;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+
+
 }
 
-#Porfolio{
+.hoja img {
 
-background-color: rgb(21, 21, 21);
-}
+    display: flex;
+    width: 600px;
 
-
-
-
-.edicion { /* titulo */
-
-    width: 100%;
-    text-align: center;
+    margin: auto;
+    padding-top: 20px;
     padding-bottom: 4%;
-    padding-top: 6%;
 }
 
- /* nuevo */
+#Porfolio {
+    background-color: rgb(45, 45, 45);
+}
 
-.edicionAudiovisual{
+.edicion {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.edicion h4 {
+
+    text-align: center;
+    font-size: 2em;
+    color: rgb(200, 200, 200);
+    letter-spacing: 0.4em;
+
+}
+
+.edicionAudiovisual {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 25px;
+    gap: 20px;
     padding-bottom: 2%;
-    width: 100%;
     margin: auto;
+    width: 1200px;
 
 
 }
 
-.arteOnline{
+.contenedor-portadas {
 
-    width: 700px;
-    height: 350px;
+    width: 450px;
+    margin: auto;
+    padding: 0;
+
+}
+
+.arteOnline {
+
+    width: 400px;
+    height: 300px;
     background: url(/ArteOnline.png);
     background-size: cover cover;
     background-position: center center;
     background-repeat: no-repeat;
-align-items: center;
-display: flex;
-justify-content: center;
-margin: auto;
-border-radius: 10px;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-overflow: hidden;
-transition: all 0.25s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
 }
 
 .contenedor-portadas :hover {
@@ -472,122 +338,122 @@ transition: all 0.25s;
 
 }
 
-.arteOnline i{
+.arteOnline i {
 
     color: #ffffff;
-    font-size: 80px;
+    font-size: 45px;
 
 }
 
-.arteOnline i:hover{
+.arteOnline i:hover {
 
     color: #eeb50c;
 }
 
 
-.amia{
-    width: 700px;
-    height: 350px;
+.amia {
+    width: 400px;
+    height: 300px;
     background: url(Amia.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-align-items: center;
-display: flex;
-justify-content: center;
-margin: auto;
-border-radius: 10px;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-overflow: hidden;
-transition: all 0.25s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
 }
 
-.amia i{
+.amia i {
 
     color: #ffffff;
-    font-size: 80px;
+    font-size: 45px;
 
-    
+
 }
 
-.amia i:hover{
+.amia i:hover {
 
     color: #eeb50c;
 }
 
-.katja{
+.katja {
 
-    width: 700px;
-    height: 350px;
+    width: 400px;
+    height: 300px;
     background: url(/Katja.png);
     background-size: cover cover;
     background-position: center center;
     background-repeat: no-repeat;
-align-items: center;
-display: flex;
-justify-content: center;
-margin: auto;
-border-radius: 10px;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-overflow: hidden;
-transition: all 0.25s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
 }
 
-.katja i{
+.katja i {
 
     color: #ffffff;
-    font-size: 80px;
+    font-size: 45px;
 }
 
 
 
-.katja i:hover{
+.katja i:hover {
 
     color: #eeb50c;
 }
 
 
-.chinos{
-    width: 700px;
-    height: 350px;
+.chinos {
+    width: 400px;
+    height: 300px;
     background: url(/AñoChino.png);
     background-size: cover cover;
     background-position: center center;
     background-repeat: no-repeat;
-align-items: center;
-display: flex;
-justify-content: center;
-margin: auto;
-border-radius: 10px;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-overflow: hidden;
-transition: all 0.25s;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
 }
 
-.chinos i{
+.chinos i {
 
     color: #ffffff;
-    font-size: 80px;
+    font-size: 45px;
 }
 
 
-.chinos i:hover{
+.chinos i:hover {
 
     color: #eeb50c;
 }
 
-.edicionAudiovisual-responsive{
+.edicionAudiovisual-responsive {
     display: none;
 
 }
 
-.masTrabajos-responsive{
+.masTrabajos-responsive {
     display: none;
 }
 
-.masTrabajos{
-width: 100%;
-align-items: center;
+.masTrabajos {
+    width: 100%;
+    align-items: center;
     background-color: rgb(0, 0, 0);
     margin: auto;
     padding-bottom: 2%;
@@ -609,45 +475,35 @@ align-items: center;
 
 span {
     color: black;
+    font-size: 40px;
+
+    letter-spacing: 0.4em;
 }
 
+.closet {
 
-
-.iconos-programas{
-
-padding-bottom: 4%;
-
-
-}
-.iconos-contacto{
-
-
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-  width: 30%;
-  padding-bottom: 6%;
-   
-
-
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-.iconos-contacto i{
-
-font-size: 40px;
-padding-left: 0;
-padding-bottom: 6%;
-}
-
-.iconos-contacto  i:hover{
-    color: #ce9a00;
-    
-    }
-
-.potadaCloset{
+.closet img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    padding: 4%;
+    width: 70%;
+}
+
+.protoVideo {
+
+    text-align: center;
+}
+
+
+.protoVideo video {
+
+    width: 70%;
+    margin: auto;
+    text-align: center;
+
 
 }
 
@@ -660,45 +516,48 @@ padding-bottom: 6%;
 
 
 .contactoIconos {
-display: grid;
-grid-template-columns: auto auto auto auto;
-width: 30%;
-
-  
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     color: rgb(200, 200, 200);
-margin: auto;
-padding-top: 2%;
-align-items: center;
-
-
-}
-
-.contactoIconos i{
-    font-size: 40px;
-    
-}
-
-.contactoIconos i:hover{
-    color: #ce9a00;
-    
-}
-
-.mail-emi{
+    margin: auto;
+padding-bottom: 20px;
+padding-top: 30px;
+    align-items: center;
   
-  padding-top: 8px;
+
+
 }
-.tel-emi{
+
+.contactoIconos i {
+    font-size: 40px;
+
+}
+
+.contactoIconos i:hover {
+    color: #ce9a00;
+
+}
+
+.mail-emi {
+
+    padding-top: 8px;
+}
+
+.tel-emi {
     padding-top: 8px;
 
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
     padding-left: 10px;
 }
-.fa-envelope{
 
+.fa-envelope {
 
- padding-left: 10px;
+    padding-left: 10px;
 
 }
 
@@ -709,65 +568,36 @@ footer {
 }
 
 
-footer i:hover{
-color: #ce9a00;
-
-}
-.home {
-
-    padding-top: 2%;
-    padding-bottom: 4%;
+footer i:hover {
+    color: #ce9a00;
 
 }
 
 .formulario {
 
-    width: 50%;
+    width: 40%;
     margin: auto;
     padding-bottom: 1%;
     color: aliceblue;
+   
 
 }
 
 .redes {
-
-    padding: 2%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
+.redes i {
 
-
-.corta {
-
-    width: 50%;
+    font-size: 40px;
 }
 
-
-.protoVideo {
-
-    width: 100%;
-    margin: auto;
-text-align: center;
-
-
-}
-
-
-video{
-
-    width: 80%;
-}
-
-.text-center {
-
-    padding: 1%;
-
-
-}
-
-
-
-.derechos{
-
+.derechos {
 
     padding-top: 2%;
 }
@@ -775,475 +605,385 @@ video{
 
 
 
+@media screen and (max-width: 1100px) {
 
+    .formulario {
+
+        width: 95%;
+       
+    
+    }
+
+    .texto-emi {
+
+        top: 15%;
+
+    }
+
+    .texto-emi h1 {
+
+        font-size: 2em;
+
+    }
+
+    .texto-emi h3 {
+
+        font-size: 1em;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* nav*/
+
+    .abrir-menu,
+    .cerrar-menu {
+
+        display: block;
+        border: 0;
+        font-size: 1rem;
+        background-color: transparent;
+        color: rgb(188, 188, 188);
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(16, 16, 16);
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav-list {
+
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    header h4 {
+
+        font-size: 1.3em;
+
+    }
+
+    /* nav*/
+
+
+
+    .flor {
+
+        display: none;
+
+
+    }
+
+
+    .bio {
+
+        background-image: url(/flor.jpg);
+        height: 700px;
+
+    }
+
+
+    .edicion h4 {
+
+        font-size: 1em;
+
+
+    }
+
+    .porfolio h4 {
+        font-size: 0.5em;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .texto-emi {
+
+        top: 10%;
+
+    }
+
+
+    .texto-emi h1 {
+
+        display: none;
+
+    }
+
+
+
+}
 
 
 @media only screen and (max-width: 1400px) {
 
- /* nuevo */
+    /* nuevo */
 
- .edicionAudiovisual{
-    display: grid;
-    grid-template-columns: auto;
-    gap: 10px;
-    padding-bottom: 2%;
-    width: 100%;
-    margin: auto;
+    .edicionAudiovisual {
+        display: grid;
+        grid-template-columns: auto;
+        width: auto;
+    }
 
 
 }
 
-
-    .trabajo {
-
-        width: 50%;
-        margin: auto;
-       
-
-    }
+@media only screen and (max-width: 666px) {
 
 
-    @media only screen and (max-width: 748px) {
-
-        .arteOnline{
-
-            width: 650px;
-            height: 350px;
-
-        }
-        
-     
-        
-        .amia{
-            width: 650px;
-            height: 350px;
-   
-        }
-        
     
-        
-        .katja{
-        
-            width: 650px;
-            height: 350px;
-       
-        
-        }
-        
-     
-        
-      
-        
-        .chinos{
-            width: 650px;
-            height: 350px;
-    
-        }
-        
-        
+
+    .hoja img {
+
+        width: 300px;
+    }
+
+    .edicionAudiovisual {
+        display: none;
+    }
+
+    .masTrabajos {
+        display: none;
+    }
+
+    .edicionAudiovisual-responsive {
+
+        display: inline;
+
+
+    }
+
+    .masTrabajos-responsive {
+
+        display: inline;
+    }
+
+
+    .contenedor-portadas-2 {
+
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .text-center {
+
+        padding-bottom: 20px;
+    }
+
+    .arteOnline-responsive {
+
+        width: 300px;
+        height: 200px;
+        background: url(/ArteOnline_550.png);
+        background-size: cover cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+    }
+
+
+    .arteOnline-responsive i {
+
+        color: #ffffff;
+        font-size: 30px;
+        background-color: transparent;
+    }
+
+    .arteOnline-responsivei:hover {
+
+        color: #eeb50c;
+    }
+
+
+    .amia-responsive {
+
+        width: 300px;
+        height: 200px;
+        background: url(/Amia550.png);
+        background-size: cover cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+    }
+
+    .amia-responsive i {
+
+        color: #ffffff;
+        font-size: 30px;
+        background-color: transparent;
+    }
+
+    .amia-responsivei:hover {
+
+        color: #eeb50c;
+    }
+
+    .katja-responsive {
+
+        width: 300px;
+        height: 200px;
+        background: url(/Katja_550.png);
+        background-size: cover cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+    }
+
+
+    .katja-responsive i {
+
+        color: #ffffff;
+        font-size: 30px;
+        background-color: transparent;
+    }
+
+    .katja-responsivei:hover {
+
+        color: #eeb50c;
+    }
+
+    .chinos-responsive {
+
+        width: 300px;
+        height: 200px;
+        background: url(/AñoChino_550.png);
+        background-size: cover cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: all 0.25s;
+    }
+
+
+    .chinos-responsive i {
+
+        color: #ffffff;
+        font-size: 30px;
+        background-color: transparent;
+    }
+
+    .chinos-responsivei:hover {
+
+        color: #eeb50c;
+    }
+
+
+    span {
+
+        font-size: 20px;
+        letter-spacing: 0.4em;
     }
 
 
 
-
-
-
-
-
-
-
-    @media only screen and (max-width: 666px) {
-
-        
-.edicionAudiovisual{
-    display: none;
 }
-
-.masTrabajos{
-    display: none;
-}
-
-        .edicionAudiovisual-responsive{
-
-            display: inline ;
-        }
-
-        .masTrabajos-responsive{
-            display: inline ;
-        }
-
-        .arteOnline-responsive{
-
-            width: 550px;
-            height: 350px;
-            background: url(/ArteOnline_550.png);
-            background-size: cover cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-        }
-
-
-        .arteOnline-responsive i{
-
-            color: #ffffff;
-            font-size: 40px;
-            background-color: transparent;
-        }
-        
-        .arteOnline-responsivei:hover{
-        
-            color: #eeb50c;
-        }
-        
-
-        .amia-responsive{
-
-            width: 550px;
-            height: 350px;
-            background: url(/Amia550.png);
-            background-size: cover cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-        }
-
-
-        .amia-responsive i{
-
-            color: #ffffff;
-            font-size: 40px;
-            background-color: transparent;
-        }
-        
-        .amia-responsivei:hover{
-        
-            color: #eeb50c;
-        }
-        
-        .katja-responsive{
-
-            width: 550px;
-            height: 350px;
-            background: url(/Katja_550.png);
-            background-size: cover cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-        }
-
-
-        .katja-responsive i{
-
-            color: #ffffff;
-            font-size: 40px;
-            background-color: transparent;
-        }
-        
-        .katja-responsivei:hover{
-        
-            color: #eeb50c;
-        }
-
-        .chinos-responsive{
-
-            width: 550px;
-            height: 350px;
-            background: url(/AñoChino_550.png);
-            background-size: cover cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-        }
-
-
-        .chinos-responsive i{
-
-            color: #ffffff;
-            font-size: 40px;
-            background-color: transparent;
-        }
-        
-        .chinos-responsivei:hover{
-        
-            color: #eeb50c;
-        }
-      
-    }
-
-
-
 
 
 
 @media only screen and (max-width: 560px) {
+    .redes {
 
-    .bio {
-
-        width: 110vh;
-        height: 60vh;
-        background: url(/flor.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    
-        margin-top: 35%;
-    
-    
-    
-    }
-   
-  
-    .contactoIconos i{
-    
-        font-size: 30px;
-
-        }
-
- 
-        .contactoIconos {
-        
-            width: 100%;
-       padding-bottom: 2%;
-
-          
-        }
-
-
-.formulario{
-   
-    width: 80%;
-}
-
- .arteOnline-responsive{
-
-    width: 350px;
-    height: 150px;
-
-
-
-}
-
-
-
-.amia-responsive{
-    width: 350px;
-    height: 150px;
-
-}
-
-
-
-.katja-responsive{
-
-    width: 350px;
-    height: 150px;
-
-
-
-}
-
-
-
-
-
-.chinos-responsive{
-    width: 350px;
-    height: 150px;
-
-
-}
-
-
-
-
-
-
-    h3 {
-
-        font-size: 1em;
-        letter-spacing: 0.4em;
-
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
     }
 
-    h2 {
-
-        font-size: 1em;
-        letter-spacing: 0.4em;
-
-    }
-
-    h4 {
-
-        font-size: 1em;
-        letter-spacing: 0.4em;
-
-    }
-
-    h5 {
-
-        font-size: 1em;
-        letter-spacing: 0.4em;
-
-    }
-
-   
-
-    .texto-bio {
-
-      
-    width: 50%;
-
-
-    }
-
-    .bio {
-
-      
-        width: 50%;
-        
-        
-            }
-        
-   
-   
-
-
-    i {
-
-
-        font-size: 170%;
-        letter-spacing: 0.6em;
-        padding-left: 2%;
-        padding-bottom: 8%;
-
-    }
-
-    .datos-personales {
-
-        text-align: center;
-
-    }
-
-  
 
     .protoVideo {
 
         width: 100%;
-
-
-
     }
-
-  
-    .trabajo {
-
-        width: 100%;
-        margin: auto;
-       
-
-    }
-
-    
-
-    .botonAV{
-        width: 50%;
-            text-align: right;
-
-        
-        margin: auto;
-        }
-        
-        
-        
-        .botonUIux{
-            width: 50%;
-                text-align: center;
-                padding-left: 1%;
-                margin: auto;
-              
-            }
-        
-
 
 
 }
+
 
 /* DESKTOP */
 @media (max-width:800px) {
 
-  .contactoIconos {
-            display: grid;
-            grid-template-columns: auto auto;
-            width: 53%;
-       padding-bottom: 2%;
-          
-        }
 
-    
-
-    .trabajo {
+    .protoVideo video {
 
         width: 100%;
         margin: auto;
-       
+    }
+
+}
+
+@media (max-width:344px) {
+    .iconos-contacto {
+
+        font-size: 35px;
+
 
     }
-    
 
-}
+    .botones-2 {
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 
-}
+    .protoVideo video {
 
-@media only screen and (max-width: 320px) {
-   
- 
-        .contactoIconos {
-        
-            width: 90%;
-       padding-bottom: 2%;
-      
-          
-        }
+        width: 100%;
+        margin: auto;
+    }
 
-
-.formulario{
-
-    width: 90%;
-}
-
-i{
-    font-size: 25px;
-}
 
 
 }
