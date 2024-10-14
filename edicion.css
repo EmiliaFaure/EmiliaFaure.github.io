@@ -115,4 +115,14 @@ color: #dedede;
       height: 250px;
     }
 
+
+
+
+}
+@media only screen and (max-width: 600px) {
+
+.cerrar i{
+
+font-size: 30px;
+    }
 }
