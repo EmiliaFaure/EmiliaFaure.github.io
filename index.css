@@ -141,16 +141,20 @@ header h4 {
     padding-top: 1%;
 }
 
+
+/* biografia */
+
 .contenedor-bio {
 
     width: 100%;
-
     position: relative;
     margin: auto;
     display: flex;
+
     align-content: center;
     justify-content: center;
 
+max-width: 1200px;
 }
 
 .bio {
@@ -465,7 +469,21 @@ header h4 {
     background-color: rgb(255, 255, 255);
     padding-bottom: 4%;
     padding-top: 4%;
+    max-width: 1200px;
+    margin: auto;
 
+}
+
+#uxui{
+    background-color: rgb(255, 255, 255);
+}
+
+.botones-2{
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 10px;
 }
 
 .titulo {
@@ -490,7 +508,7 @@ span {
 
 .closet img {
     object-fit: cover;
-    width: 70%;
+    width: 100%;
 }
 
 .protoVideo {
@@ -501,7 +519,7 @@ span {
 
 .protoVideo video {
 
-    width: 70%;
+    width: 100%;
     margin: auto;
     text-align: center;
 
@@ -527,7 +545,6 @@ span {
 padding-bottom: 20px;
 padding-top: 30px;
     align-items: center;
-  
 
 
 }
@@ -946,7 +963,7 @@ footer i:hover {
         width: 100%;
     }
 
-
+ 
 }
 
 
