@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +9,10 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    font-family: "Montserrat", sans-serif;
-}
+      font-family: "Montserrat", serif;
+   
+ 
+    }
 
 a {
     text-decoration: none;
@@ -20,6 +23,20 @@ li {
     list-style: none;
 }
 
+/* =========================================== */
+/* ================= Botones =================== */
+/* =========================================== */
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: solid;
+    border-width: 1px;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+  }
+  
+
 .abrir-menu,
 .cerrar-menu {
     display: none;
@@ -27,7 +44,11 @@ li {
 }
 
 
-/* nav*/
+/*********************************************************/
+/*********************************************************/
+/* NAV */
+/*********************************************************/
+/*********************************************************/
 
 
 header div,
@@ -66,6 +87,7 @@ header h4 {
     letter-spacing: 0.1em;
     text-shadow: black;
     flex: 1;
+    font-weight:200;
 
 }
 
@@ -94,11 +116,11 @@ header h4 {
 }
 
 
-/* nav*/
-
-
-/* Video y texto */
-
+/*********************************************************/
+/*********************************************************/
+/* VIDEO*/
+/*********************************************************/
+/*********************************************************/
 
 
 #video-fondo {
@@ -122,6 +144,7 @@ header h4 {
     font-size: 3em;
     color: rgb(239, 239, 239);
     letter-spacing: 0.4em;
+    font-weight:400;
 
 }
 
@@ -130,7 +153,7 @@ header h4 {
     font-size: 2em;
     color: rgb(200, 200, 200);
     letter-spacing: 8px;
-
+    font-weight:300;
 }
 
 .texto-emi i {
@@ -140,9 +163,11 @@ header h4 {
     letter-spacing: 0.8em;
     padding-top: 1%;
 }
-
-
+/*********************************************************/
+/*********************************************************/
 /* biografia */
+/*********************************************************/
+/*********************************************************/
 
 .contenedor-bio {
 
@@ -150,11 +175,10 @@ header h4 {
     position: relative;
     margin: auto;
     display: flex;
-
     align-content: center;
     justify-content: center;
-
-max-width: 1200px;
+    max-width: 1350px;
+  
 }
 
 .bio {
@@ -165,14 +189,9 @@ max-width: 1200px;
     flex-wrap: wrap;
     align-content: center;
     justify-content: start;
-
-    width: 900px;
-    height: 800px;
-
+    width: 800px;
+    height: 750px;
     color: rgb(214, 214, 214);
-
-
-
 
 
 }
@@ -180,13 +199,15 @@ max-width: 1200px;
 .bio h2 {
 
     letter-spacing: 0.4em;
-
+    font-weight:400;
     padding-top: 4%;
 }
 
 .bio h3 {
 
     font-size: 25px;
+    font-weight:400;
+    
 }
 
 .texto-bio {
@@ -196,20 +217,11 @@ max-width: 1200px;
 }
 
 .texto-bio p {
-
+    letter-spacing: 0.1em;
     text-align: justify;
+    font-weight:200;
 }
 
-
-
-
-.iconos-contacto {
-
-    display: flex;
-    gap: 10px;
-    font-size: 40px;
-
-}
 
 .flor {
 
@@ -232,7 +244,11 @@ max-width: 1200px;
 
 }
 
-
+/*********************************************************/
+/*********************************************************/
+/* PORFOLIO */
+/*********************************************************/
+/*********************************************************/
 
 
 .porfolio {
@@ -243,10 +259,16 @@ max-width: 1200px;
     color: rgb(200, 200, 200);
     letter-spacing: 0.4em;
     margin: auto;
-
+   
     padding-top: 2%;
 
 
+}
+
+
+.porfolio h4{
+
+    font-weight:200;
 }
 
 .botones {
@@ -258,26 +280,31 @@ max-width: 1200px;
     align-content: center;
     justify-content: center;
     padding-top: 20px;
+    transition: all 0.25s;
 
 }
 
-.botones-2 {
+.btn-edicion, .btn-uxui{
+    background-color: rgb(45, 45, 45);
+    color: white;
+  }
+ 
+  .btn-edicion:hover{
 
-    display: flex;
-    margin: auto;
-    gap: 30px;
-    align-content: center;
-    justify-content: center;
-    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-uxui:hover{
 
-
-}
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
 
 .hoja img {
 
     display: flex;
     width: 600px;
-
     margin: auto;
     padding-top: 20px;
     padding-bottom: 4%;
@@ -298,32 +325,38 @@ max-width: 1200px;
     font-size: 2em;
     color: rgb(200, 200, 200);
     letter-spacing: 0.4em;
+    font-weight:200;
 
 }
 
-.edicionAudiovisual {
-    display: grid;
-    grid-template-columns: auto auto;
+/*********************************************************/
+/*********************************************************/
+/* Edicion*/
+/*********************************************************/
+/*********************************************************/
+
+
+
+.contenedor-portadas  {
+    display: flex;
+    max-width: 1350px;
     gap: 20px;
     padding-bottom: 2%;
     margin: auto;
-    width: 1200px;
+padding-top: 2%;
+
+align-items: center;
+justify-content: center;
 
 
 }
 
-.contenedor-portadas {
 
-    width: 450px;
-    margin: auto;
-    padding: 0;
-
-}
 
 .arteOnline {
 
-    width: 400px;
-    height: 300px;
+    width: 420px;
+    height: 250px;
     background: url(/ArteOnline.png);
     background-size: cover cover;
     background-position: center center;
@@ -345,7 +378,7 @@ max-width: 1200px;
 
 .arteOnline i {
 
-    color: #ffffff;
+    color: #ebeaea;
     font-size: 45px;
 
 }
@@ -357,8 +390,8 @@ max-width: 1200px;
 
 
 .amia {
-    width: 400px;
-    height: 300px;
+    width: 420px;
+    height: 250px;
     background: url(Amia.png);
     background-size: cover;
     background-position: center;
@@ -375,7 +408,7 @@ max-width: 1200px;
 
 .amia i {
 
-    color: #ffffff;
+    color: #ebeaea;
     font-size: 45px;
 
 
@@ -388,8 +421,8 @@ max-width: 1200px;
 
 .katja {
 
-    width: 400px;
-    height: 300px;
+    width: 420px;
+    height: 250px;
     background: url(/Katja.png);
     background-size: cover cover;
     background-position: center center;
@@ -406,43 +439,13 @@ max-width: 1200px;
 
 .katja i {
 
-    color: #ffffff;
+    color: #ebeaea;
     font-size: 45px;
 }
 
 
 
 .katja i:hover {
-
-    color: #eeb50c;
-}
-
-
-.chinos {
-    width: 400px;
-    height: 300px;
-    background: url(/AñoChino.png);
-    background-size: cover cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;
-}
-
-.chinos i {
-
-    color: #ffffff;
-    font-size: 45px;
-}
-
-
-.chinos i:hover {
 
     color: #eeb50c;
 }
@@ -457,34 +460,50 @@ max-width: 1200px;
 }
 
 .masTrabajos {
+    display: flex;
     width: 100%;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
     margin: auto;
-    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    align-items: center;
+    justify-content: center;
+  
 }
 
-.diseño {
+.btn-trabajo{
+    background-color: black;
+    color: #ffffff;
+}
 
+.btn-trabajo:hover{
     background-color: rgb(255, 255, 255);
-    padding-bottom: 4%;
-    padding-top: 4%;
-    max-width: 1200px;
-    margin: auto;
+    color: #000000;
+}
+
+
+
+/*********************************************************/
+/*********************************************************/
+/* Diseño*/
+/*********************************************************/
+/*********************************************************/
+
+.diseno {
+
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+    max-width: 1350px;
+
 
 }
 
 #uxui{
     background-color: rgb(255, 255, 255);
+    padding-top: 2%;
+    padding-bottom: 4%;
 }
 
-.botones-2{
-
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 10px;
-}
 
 .titulo {
     text-align: center;
@@ -494,43 +513,166 @@ max-width: 1200px;
 
 span {
     color: black;
-    font-size: 40px;
-
+    font-size: 2rem;
+    font-weight:200;
     letter-spacing: 0.4em;
 }
 
-.closet {
+.app-web{
+   
+  display: flex;
+  gap: 30px;
+  padding-top: 4%;
+  padding-bottom: 4%;
 
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+  align-items:center;
+  justify-content:center;
+  margin: auto;
+
+
+
 }
 
 .closet img {
     object-fit: cover;
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
 }
 
-.protoVideo {
-
-    text-align: center;
-}
 
 
 .protoVideo video {
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
 
-    width: 100%;
+.btn-diseno{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+   
+}
+
+.btn-diseno:hover{
+    background-color: rgb(2, 2, 2);
+    color: #ffffff;
+}
+
+.botones-diseno{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     margin: auto;
-    text-align: center;
+  
+ 
+}
+
+.otthon{
+
+    max-width: 1350px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   padding-top: 4%;
+   padding-bottom: 2%;
+
+
+
+ 
 
 
 }
+
+.otthon img{
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+.img-1, .img-2 {
+    flex: 1; 
+}
+
+/*********************************************************/
+/*********************************************************/
+/* Contacto*/
+/*********************************************************/
+/*********************************************************/
 
 .datos-personales {
     margin-top: 4%;
     text-align: center;
     color: rgb(200, 200, 200);
 }
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  /* Estilos para el campo de correo */
+  .email-emi label,
+  .mensaje-emi label {
+    font-weight: bold;
+    color: #c5c5c5;
+  }
+  
+  .email-emi input[type="email"],
+  .mensaje-emi textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .email-emi input[type="email"] {
+    height: 40px;
+  }
+  
+  .mensaje-emi textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Estilo del botón de envío */
+ .btn-enviar{
+    display: inline-block;
+    background-color: #000000; /* Color verde */
+    color: white;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+  
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
 
 
 
@@ -581,6 +723,12 @@ padding-top: 30px;
 
 }
 
+/*********************************************************/
+/*********************************************************/
+/* FOOTER*/
+/*********************************************************/
+/*********************************************************/
+
 footer {
 
     text-align: center;
@@ -624,395 +772,3 @@ footer i:hover {
 
 
 
-
-@media screen and (max-width: 1100px) {
-
-    .formulario {
-
-        width: 95%;
-       
-    
-    }
-
-    .texto-emi {
-
-        top: 15%;
-
-    }
-
-    .texto-emi h1 {
-
-        font-size: 2em;
-
-    }
-
-    .texto-emi h3 {
-
-        font-size: 1em;
-
-    }
-
-
-}
-
-
-@media screen and (max-width: 800px) {
-
-    /* nav*/
-
-    .abrir-menu,
-    .cerrar-menu {
-
-        display: block;
-        border: 0;
-        font-size: 1rem;
-        background-color: transparent;
-        color: rgb(188, 188, 188);
-
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: rgb(16, 16, 16);
-        padding: 2rem;
-
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-
-    }
-
-    .nav-list {
-
-        flex-direction: column;
-        align-items: end;
-    }
-
-
-    header h4 {
-
-        font-size: 1.3em;
-
-    }
-
-    /* nav*/
-
-
-
-    .flor {
-
-        display: none;
-
-
-    }
-
-
-    .bio {
-
-        background-image: url(/flor.jpg);
-        height: 700px;
-
-    }
-
-
-    .edicion h4 {
-
-        font-size: 1em;
-
-
-    }
-
-    .porfolio h4 {
-        font-size: 0.5em;
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .texto-emi {
-
-        top: 10%;
-
-    }
-
-
-    .texto-emi h1 {
-
-        display: none;
-
-    }
-
-
-
-}
-
-
-@media only screen and (max-width: 1400px) {
-
-    /* nuevo */
-
-    .edicionAudiovisual {
-        display: grid;
-        grid-template-columns: auto;
-        width: auto;
-    }
-
-
-}
-
-@media only screen and (max-width: 666px) {
-
-    .contactoIconos i{
-   
-        font-size: 35px;
-    
-    }
-    
-    .contactoIconos small{
-
-
-        font-size: 12px;
-    }
-
-    .hoja img {
-
-        width: 300px;
-    }
-
-    .edicionAudiovisual {
-        display: none;
-    }
-
-    .masTrabajos {
-        display: none;
-    }
-
-    .edicionAudiovisual-responsive {
-
-        display: inline;
-
-
-    }
-
-    .masTrabajos-responsive {
-
-        display: inline;
-    }
-
-
-    .contenedor-portadas-2 {
-
-        width: auto;
-        padding-bottom: 20px;
-    }
-
-    .text-center {
-
-        padding-bottom: 20px;
-    }
-
-    .arteOnline-responsive {
-
-        width: 300px;
-        height: 200px;
-        background: url(/ArteOnline_550.png);
-        background-size: cover cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-    }
-
-
-    .arteOnline-responsive i {
-
-        color: #ffffff;
-        font-size: 30px;
-        background-color: transparent;
-    }
-
-    .arteOnline-responsivei:hover {
-
-        color: #eeb50c;
-    }
-
-
-    .amia-responsive {
-
-        width: 300px;
-        height: 200px;
-        background: url(/Amia550.png);
-        background-size: cover cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-    }
-
-    .amia-responsive i {
-
-        color: #ffffff;
-        font-size: 30px;
-        background-color: transparent;
-    }
-
-    .amia-responsivei:hover {
-
-        color: #eeb50c;
-    }
-
-    .katja-responsive {
-
-        width: 300px;
-        height: 200px;
-        background: url(/Katja_550.png);
-        background-size: cover cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-    }
-
-
-    .katja-responsive i {
-
-        color: #ffffff;
-        font-size: 30px;
-        background-color: transparent;
-    }
-
-    .katja-responsivei:hover {
-
-        color: #eeb50c;
-    }
-
-    .chinos-responsive {
-
-        width: 300px;
-        height: 200px;
-        background: url(/AñoChino_550.png);
-        background-size: cover cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        border-radius: 10px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        transition: all 0.25s;
-    }
-
-
-    .chinos-responsive i {
-
-        color: #ffffff;
-        font-size: 30px;
-        background-color: transparent;
-    }
-
-    .chinos-responsivei:hover {
-
-        color: #eeb50c;
-    }
-
-
-    span {
-
-        font-size: 20px;
-        letter-spacing: 0.4em;
-    }
-
-
-
-}
-
-
-
-@media only screen and (max-width: 560px) {
-    .redes {
-
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-    }
-
-
-    .protoVideo {
-
-        width: 100%;
-    }
-
- 
-}
-
-
-/* DESKTOP */
-@media (max-width:800px) {
-
-
-    .protoVideo video {
-
-        width: 100%;
-        margin: auto;
-    }
-
-}
-
-@media (max-width:344px) {
-    .iconos-contacto {
-
-        font-size: 35px;
-
-
-    }
-
-    .botones-2 {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .protoVideo video {
-
-        width: 100%;
-        margin: auto;
-    }
-
-
-
-}
