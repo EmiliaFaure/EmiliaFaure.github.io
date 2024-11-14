@@ -450,10 +450,7 @@ justify-content: center;
     color: #eeb50c;
 }
 
-.edicionAudiovisual-responsive {
-    display: none;
 
-}
 
 .masTrabajos-responsive {
     display: none;
@@ -566,7 +563,8 @@ span {
     align-items: center;
     justify-content: center;
     margin: auto;
-  
+    transition: all 0.25s;
+
  
 }
 
@@ -624,7 +622,6 @@ span {
    
   }
   
-  /* Estilos para el campo de correo */
   .email-emi label,
   .mensaje-emi label {
     font-weight: bold;
@@ -650,7 +647,6 @@ span {
     min-height: 100px;
   }
   
-  /* Estilo del botón de envío */
  .btn-enviar{
     display: inline-block;
     background-color: #000000; /* Color verde */
@@ -668,7 +664,7 @@ span {
     margin-top: 15px;
   }
   
-  .btn:hover {
+  .btn-enviar:hover {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
   }
