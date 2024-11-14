@@ -1,0 +1,209 @@
+@media screen and (max-width: 1100px) {
+
+    .formulario {
+
+        width: 95%;
+       
+    }
+
+    .texto-emi {
+
+        top: 15%;
+
+    }
+
+    .texto-emi h1 {
+
+        font-size: 2em;
+
+    }
+
+    .texto-emi h3 {
+
+        font-size: 1em;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* nav*/
+
+    .abrir-menu,
+    .cerrar-menu {
+
+        display: block;
+        border: 0;
+        font-size: 1rem;
+        background-color: transparent;
+        color: rgb(179, 179, 179);
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(16, 16, 16);
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav-list {
+
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    header h4 {
+
+        font-size: 1.3em;
+        font-weight:200;
+    }
+
+    /* nav*/
+
+    .flor {
+
+        display: none;
+
+
+    }
+
+    .bio {
+
+        background-image: url(/flor.jpg);
+        height: 700px;
+
+    }
+
+
+    .edicion h4 {
+
+        font-size: 1em;
+        font-weight:200;
+    
+    }
+
+    .porfolio h4 {
+        font-size: 0.5em;
+        font-weight:200;
+       
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .texto-emi {
+
+        top: 10%;
+
+    }
+
+
+    .texto-emi h1 {
+
+        display: none;
+
+    }
+
+    .contactoIconos i{
+   
+        font-size: 35px;
+    
+    }
+    
+    .contactoIconos small{
+
+
+        font-size: 12px;
+    }
+
+    .hoja img {
+
+        width: 300px;
+    }
+
+  
+
+    span {
+
+        font-size: 20px;
+        letter-spacing: 0.4em;
+    }
+
+ 
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+
+    /* nuevo */
+
+    .contenedor-portadas {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+
+}
+
+
+
+    
+
+
+@media only screen and (max-width: 560px) {
+
+    .redes {
+
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+ 
+}
+
+
+
+@media (max-width:475px) {
+    .iconos-contacto {
+
+        font-size: 35px;
+
+
+    }
+
+
+    .amia,
+    .arteOnline,
+    .katja{
+        width: 300px ;
+        height: 200px;
+    }
+}
