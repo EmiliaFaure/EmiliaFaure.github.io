@@ -178,7 +178,7 @@ header h4 {
     align-content: center;
     justify-content: center;
     max-width: 1350px;
-  
+ 
 }
 
 .bio {
@@ -230,8 +230,22 @@ header h4 {
 
 }
 
+.iconos-porfolio{
 
-.iconos-contacto i:hover {
+    display: flex;
+    gap: 15px;
+  padding-left: 2px;
+    margin: 0;
+
+   
+}
+
+.iconos-porfolio i{
+
+    font-size: 28px;
+}
+
+.iconos-porfolio i:hover {
 
     color: #eeb50c;
 }
@@ -600,6 +614,17 @@ justify-content: center;
     margin-top: 4%;
     text-align: center;
     color: rgb(200, 200, 200);
+    padding-bottom: 20px;
+}
+
+.datos-personales h4{
+
+    font-family: "Montserrat", serif;
+    font-weight:400;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+
+
 }
 
 .formulario {
