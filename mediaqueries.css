@@ -88,10 +88,11 @@
 
     .bio {
 
-        background-image: url(/flor.jpg);
+        background-image: url(/flor_2.jpg);
         background-repeat: no-repeat;
       
-        height: 700px;
+        height: auto;
+        padding-bottom: 10%;
 
     }
 
@@ -128,11 +129,14 @@
 
     .bio {
 
-        height: 850px;
+       margin: 20px;
 
     }
 
+    .bio p{
 
+        text-align:left;
+    }
 
 
 }
