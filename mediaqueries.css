@@ -28,7 +28,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     /* nav*/
 
@@ -89,9 +89,13 @@
     .bio {
 
         background-image: url(/flor.jpg);
+        background-repeat: no-repeat;
+      
         height: 700px;
 
     }
+
+
 
 
     .edicion h4 {
@@ -114,6 +118,21 @@
     object-fit: cover; 
     border-radius: 10px; 
   }
+
+
+}
+
+
+@media screen and (max-width: 440px) {
+
+
+    .bio {
+
+        height: 850px;
+
+    }
+
+
 
 
 }
