@@ -194,6 +194,7 @@ header h4 {
     color: rgb(214, 214, 214);
 
 
+
 }
 
 .bio h2 {
@@ -213,6 +214,7 @@ header h4 {
 .texto-bio {
 
     width: 90%;
+  
 
 }
 
@@ -220,6 +222,7 @@ header h4 {
     letter-spacing: 0.1em;
     text-align: justify;
     font-weight:200;
+    line-height: 2em;
 }
 
 
@@ -236,7 +239,7 @@ header h4 {
     gap: 15px;
   padding-left: 2px;
     margin: 0;
-
+   
    
 }
 
@@ -255,6 +258,7 @@ header h4 {
 
     font-size: 40px;
     padding-bottom: 20px;
+   
 
 }
 
