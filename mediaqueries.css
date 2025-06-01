@@ -1,3 +1,29 @@
+@media screen and (max-width: 1438px) {
+
+    .grilla {
+
+    display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+       
+    }
+
+     .grilla2 {
+
+  
+    display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+       
+    }
+
+
+}
+
+
+
+
+
 @media screen and (max-width: 1100px) {
 
     .formulario {
