@@ -1,27 +1,64 @@
 body{
     margin: 0;
     padding: 0;
-background-color: black;
+    background-color: black;
     font-family: "Montserrat", sans-serif;
 
 }
 
+h2{
 
+    color: #ffffff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+
+.trabajosVarios{
+   
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  padding-bottom: 30px;
+
+
+}
+
+.grilla{
+
+   
+    
+       gap: 6rem;
+    padding: 25px;
+     align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+.grilla2{
+  
+     
+    padding: 25px;
+       gap: 2rem;
+         align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
 
 
 
 
 .contenedor-videos{
 margin: auto;
-
-
 padding: 3em 2,5em;
 display: grid;
-
 place-items: center;
 grid-auto-columns: 100%;
 padding-top: 10%;
-
 padding-bottom: 5%;
 
 
@@ -49,8 +86,6 @@ padding-bottom: 5%;
     width: 75vw;
     max-width: 1200px;
     min-width: 320px;
-
-
     margin: auto;
 
 
@@ -67,10 +102,8 @@ padding-bottom: 5%;
 text-decoration: none;
 position: fixed;
 transition: background-color .3s;
-
 padding: 2%;
 width: 97%;
-
 text-align: left;
 }
 
