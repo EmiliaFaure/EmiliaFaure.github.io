@@ -467,6 +467,113 @@ justify-content: center;
     color: #eeb50c;
 }
 
+.redesSociales {
+
+    width: 420px;
+    height: 250px;
+    background: url(/RedesSociales.png);
+    background-size: cover cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.contenedor-portadas :hover {
+    transform: scale(1.02);
+
+}
+
+.redesSociales i {
+
+    color: #ebeaea;
+    font-size: 45px;
+
+}
+
+.redesSociales i:hover {
+
+    color: #f9d363;
+}
+
+.youTube {
+
+    width: 420px;
+    height: 250px;
+    background: url(/Youtube.png);
+    background-size: cover cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.contenedor-portadas :hover {
+    transform: scale(1.02);
+
+}
+
+.youTube i {
+
+    color: #ebeaea;
+    font-size: 45px;
+
+}
+
+.youTube i:hover {
+
+    color: #eeb50c;
+}
+
+.Tv {
+
+    width: 420px;
+    height: 250px;
+    background: url(/TV.png);
+    background-size: cover cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+.contenedor-portadas :hover {
+    transform: scale(1.02);
+
+}
+
+.Tv i {
+
+    color: #8e8e8e;
+    font-size: 45px;
+
+}
+
+.Tv i:hover {
+
+    color: #eeb50c;
+}
+
+
+
 
 
 .masTrabajos-responsive {
