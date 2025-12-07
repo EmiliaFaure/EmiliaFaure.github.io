@@ -118,6 +118,32 @@ color: #dedede;
     color: #ce9a00;
 }
 
+.cerrar2 {
+
+
+
+text-decoration: none;
+position: fixed;
+transition: background-color .3s;
+padding: 2%;
+width: 97%;
+text-align: left;
+}
+
+.cerrar2 i{
+font-size: 50px;
+color: #5c5c5c;
+}
+
+
+.cerrar2 :hover{
+
+    color: #ce9a00;
+}
+
+
+
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -155,6 +181,11 @@ color: #dedede;
 @media only screen and (max-width: 600px) {
 
 .cerrar i{
+
+font-size: 30px;
+    }
+
+.cerrar2 i{
 
 font-size: 30px;
     }
