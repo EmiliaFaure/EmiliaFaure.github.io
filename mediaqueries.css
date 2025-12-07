@@ -235,6 +235,11 @@ width: 10%;
         width: 100%;
     }
 
+  .contenedor-portadas2 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
 
 
     .app-web{
