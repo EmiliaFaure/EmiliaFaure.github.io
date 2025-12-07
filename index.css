@@ -276,7 +276,6 @@ header h4 {
     color: rgb(200, 200, 200);
     letter-spacing: 0.4em;
     margin: auto;
-   
     padding-top: 2%;
 
 
@@ -286,6 +285,7 @@ header h4 {
 .porfolio h4{
 
     font-weight:200;
+    padding-bottom: 20px;
 }
 
 .botones {
@@ -298,6 +298,7 @@ header h4 {
     justify-content: center;
     padding-top: 20px;
     transition: all 0.25s;
+    padding-bottom: 20px;
 
 }
 
@@ -360,21 +361,31 @@ header h4 {
     gap: 20px;
     padding-bottom: 2%;
     margin: auto;
-padding-top: 2%;
-
-align-items: center;
-justify-content: center;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
 
 
 }
 
+.contenedor-portadas2  {
+    display: flex;
+    max-width: 1350px;
+    gap: 20px;
+    padding-bottom: 2%;
+    margin: auto;
+    padding-top: 2%;
+    align-items: center;
+    justify-content: center;
 
+
+}
 
 .arteOnline {
 
     width: 420px;
     height: 250px;
-    background: url(/ArteOnline.png);
+    background: url(/Motion.png);
     background-size: cover cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -388,7 +399,15 @@ justify-content: center;
     transition: all 0.25s;
 }
 
+
+
+
 .contenedor-portadas :hover {
+    transform: scale(1.02);
+
+}
+
+.contenedor-portadas2 :hover {
     transform: scale(1.02);
 
 }
