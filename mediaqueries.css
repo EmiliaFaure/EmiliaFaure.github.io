@@ -297,11 +297,14 @@ width: 10%;
 
     .amia,
     .arteOnline,
-    .katja{
+    .katja,
+    .redesSociales,
+    .youTube,
+    .Tv{
         width: 300px ;
         height: 200px;
-    }
-
+  
+}
    
   
 }
