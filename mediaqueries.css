@@ -141,7 +141,6 @@
     .closet img,
   .protoVideo video {
     width: 600px;
-    
     object-fit: cover; 
     border-radius: 10px; 
   }
@@ -240,7 +239,14 @@ width: 10%;
         grid-template-columns: auto;
         width: 100%;
     }
+.contenedor-porfolio{
 
+ display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+
+
+}
 
     .app-web{
    
@@ -300,11 +306,19 @@ width: 10%;
     .katja,
     .redesSociales,
     .youTube,
-    .Tv{
+    .Tv
+    {
         width: 300px ;
         height: 200px;
   
 }
-   
+   .EVideo,
+   .Duxui
+   {
+
+     width: 300px ;
+        height: 200px;
+  
+   }
   
 }
