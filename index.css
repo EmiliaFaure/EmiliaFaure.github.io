@@ -814,16 +814,19 @@ header h4 {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-   
+
   }
   
   .email-emi label,
   .mensaje-emi label {
-    font-weight: bold;
+    font-weight:400;
     color: #c5c5c5;
+
+
+ 
+    
   }
   
   .email-emi input[type="email"],
@@ -834,6 +837,8 @@ header h4 {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1em;
+    
+ 
   }
   
   .email-emi input[type="email"] {
@@ -847,14 +852,13 @@ header h4 {
   
  .btn-enviar{
     display: inline-block;
-    background-color: #000000; /* Color verde */
+    background-color: #000000; 
     color: white;
     border: solid;
     border-width: 1px;
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
-  
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
