@@ -213,6 +213,33 @@ header h4 {
     
 }
 
+.contenedor-bio-texto{
+ display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+
+
+
+}
+
+.iconos-programas{
+
+    display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    
+}
+
+.iconos-programas h4 {
+
+        letter-spacing: 0.4em;
+    font-weight:400;
+padding-bottom: 20px;
+padding-top: 10px;
+
+
+}
+
 .texto-bio {
 
     width: 90%;
@@ -256,12 +283,6 @@ header h4 {
 }
 
 
-.iconos-programas {
-
-    padding-bottom: 20px;
-   
-
-}
 
 /*********************************************************/
 /*********************************************************/
