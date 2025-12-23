@@ -105,22 +105,7 @@
 
     /* nav*/
 
-    .flor {
-
-        display: none;
-
-
-    }
-
-    .bio {
-
-        background-image: url(/flor_2.jpg);
-        background-repeat: no-repeat;
-      
-        height: auto;
-        padding-bottom: 10%;
-
-    }
+    
 
 
 
@@ -198,11 +183,7 @@ width: 10%;
         font-size: 12px;
     }
 
-    .hoja img {
-
-        width: 300px;
-    }
-
+  
   
 
     span {
@@ -247,6 +228,24 @@ width: 10%;
 
 
 }
+
+.flor {
+
+        display: none;
+
+
+    }
+
+    .bio {
+
+        background-image: url(/flor_2.jpg);
+        background-repeat: no-repeat;
+      
+        height: auto;
+        padding-bottom: 10%;
+
+    }
+
 
     .app-web{
    
