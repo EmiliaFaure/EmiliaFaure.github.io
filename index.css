@@ -439,21 +439,11 @@ padding-top: 10px;
     align-items: center;
     justify-content: center;
 
-
 }
 
-.contenedor-portadas2  {
-    display: flex;
-    max-width: 1350px;
-    gap: 20px;
-    padding-bottom: 2%;
-    margin: auto;
-    padding-top: 2%;
-    align-items: center;
-    justify-content: center;
 
 
-}
+
 
 .arteOnline {
 
