@@ -79,6 +79,33 @@ body {
     color: #ce9a00;
 }
 
+.cerrar2 {
+
+
+
+text-decoration: none;
+position: fixed;
+transition: background-color .3s;
+padding: 2%;
+width: 97%;
+text-align: left;
+}
+
+.cerrar2 i{
+font-size: 50px;
+color: #5c5c5c;
+}
+
+
+.cerrar2 :hover{
+
+    color: #ce9a00;
+}
+
+
+
+
+
 /* RESPONSIVE */
 @media (max-width: 1000px) {
     .video-item {
@@ -91,4 +118,6 @@ body {
         width: 100%; /* 1 columna en móviles */
     }
     .cerrar i { font-size: 30px; }
+
+    .cerrar2 i { font-size: 30px; }
 }
