@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos Verticales</title>
+    <title>Reels</title>
     <link rel="stylesheet" href="/edicion.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,18 +31,55 @@
     </div>
   </section>
 
-  <script>
-    document.querySelectorAll('.js-video').forEach(el => {
-      const id = el.getAttribute('data-id');
-      // Ponemos la miniatura de YouTube como fondo
-      el.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/maxresdefault.jpg)`;
-      
-      // Añadimos el botón de Play visual
-      el.innerHTML = '<div class="play-btn"><i class="fa-solid fa-play"></i></div>';
+<div id="video-lightbox" class="video-lightbox">
+    <div class="lightbox-overlay js-close-lightbox"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close js-close-lightbox" aria-label="Cerrar video">&times;</button>
+      <div class="lightbox-video-container" id="lightbox-video-target">
+        </div>
+    </div>
+  </div>
 
-      el.addEventListener('click', function() {
-        this.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-        this.classList.add('video-playing');
+
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+      const lightbox = document.getElementById('video-lightbox');
+      const videoTarget = document.getElementById('lightbox-video-target');
+      const closeButtons = document.querySelectorAll('.js-close-lightbox');
+
+      // Inicializar las portadas en la grilla
+      document.querySelectorAll('.js-video').forEach(el => {
+        const id = el.getAttribute('data-id');
+        el.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/maxresdefault.jpg)`;
+        el.innerHTML = '<div class="play-btn"><i class="fa-solid fa-play"></i></div>';
+
+        // Al hacer clic, abrir el Lightbox
+        el.addEventListener('click', function() {
+          const videoId = this.getAttribute('data-id');
+          // Cargar el iframe grande con autoplay y limpieza de YouTube
+          videoTarget.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+          lightbox.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
+        });
+      });
+
+      // Función para cerrar el Lightbox
+      function closeLightbox() {
+        lightbox.classList.remove('active');
+        videoTarget.innerHTML = ''; // Borrar el iframe para detener el video
+        document.body.style.overflow = ''; // Reactivar scroll
+      }
+
+      // Eventos para cerrar al hacer clic en el botón X o en el fondo oscuro
+      closeButtons.forEach(btn => {
+        btn.addEventListener('click', closeLightbox);
+      });
+
+      // Cerrar también con la tecla Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape" && lightbox.classList.contains('active')) {
+          closeLightbox();
+        }
       });
     });
   </script>
