@@ -4,142 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos Verticales</title>
-
-
-    <!-- CSS -->
-  <link rel="stylesheet" href="/edicion.css" />
-
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-
-     <!---Icono-->
-  <link rel="icon" href="/Logo.ico" type="ico">
-
-  <!-- FONTAWESOME -->
-  <script src="https://kit.fontawesome.com/14b1b88f84.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="/edicion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Logo.ico" type="ico">
+    <script src="https://kit.fontawesome.com/14b1b88f84.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+  <section class="Amia-porfolio">
+    <div class="cerrar">
+      <a href="/Video.html"> <i class="fa-solid fa-arrow-left"></i> </a> 
+    </div>
 
-  <section class="Amia-porfolio" >
- 
-<div class="cerrar" >
- <a href="/Video.html"> <i class="fa-solid fa-arrow-left"></i> </a> 
-</div>
+    <div class="contenedor-videos">
+      <div class="video-item js-video" data-id="sJ0WKpr7XJ0"></div>
+      <div class="video-item js-video" data-id="anNLZ7LyXVI"></div>
+      <div class="video-item js-video" data-id="1z1zoJvasl0"></div>
+      <div class="video-item js-video" data-id="elidoBzuVAw"></div>
+      <div class="video-item js-video" data-id="CB782wl5QIo"></div>
+      <div class="video-item js-video" data-id="c3cvo25pqOQ"></div>
+      <div class="video-item js-video" data-id="x841FlLUdLU"></div>
+      <div class="video-item js-video" data-id="LUrQ8kmfwpw"></div>
+      <div class="video-item js-video" data-id="H6OKEHvM_ds"></div>
+    </div>
+  </section>
 
- 
+  <script>
+    document.querySelectorAll('.js-video').forEach(el => {
+      const id = el.getAttribute('data-id');
+      // Ponemos la miniatura de YouTube como fondo
+      el.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/maxresdefault.jpg)`;
+      
+      // Añadimos el botón de Play visual
+      el.innerHTML = '<div class="play-btn"><i class="fa-solid fa-play"></i></div>';
 
-  <!-- FONTAWESOME 
-
-  <div class="contenedor-videos">
-
-    <div class="imagenes-porfolio">
-
-<img src="/Katja_Portada1.png">
-</div>
--->
-
-<!-- BMG -->
-  <div class="contenedor-videos">
-
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/sJ0WKpr7XJ0?si=xacg1excX1ic-PO5" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
-picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-<!-- Inversores -->
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/anNLZ7LyXVI?si=6XBFaBW7o-5OOJXP" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-
-<!-- arteOnline -->
-
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/1z1zoJvasl0?si=tEsqT-MPxuhMJnCH" title="YouTube video player" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<!-- A-Mar -->
-
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/elidoBzuVAw?si=vzeLdBpRnygGe1or" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<!-- DrTorres -->
-
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/CB782wl5QIo?si=bMB8a3J0-z5JRLSQ" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<!-- Hoomies-->
-
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/c3cvo25pqOQ?si=ZbICUvjQ0ODEdwh8" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<!-- remax -->
-
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/x841FlLUdLU?si=jO0JqUZENAQDhxnX" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<!-- SER -->
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/y_osY78LilU?si=yqcoca15IDwgRVkZ" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-
-<!-- Alan -->
-
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/LUrQ8kmfwpw?si=m1ne2wSUZqGDeZSH" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-
-<!-- Safari -->
-
-<div class="iframe-porfolio">
-<iframe width="1200" height="650" src="https://www.youtube.com/embed/H6OKEHvM_ds?si=wsEj-wxRo1HLGoAH" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-
-
-
-
-
-
-
-</div>
-</section>
-
-
-
-
-
-
+      el.addEventListener('click', function() {
+        this.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        this.classList.add('video-playing');
+      });
+    });
+  </script>
 </body>
 </html>
