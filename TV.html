@@ -3,76 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV</title>
-
-
-    <!-- CSS -->
-  <link rel="stylesheet" href="/edicion.css" />
-
-      <!---Icono-->
-  <link rel="icon" href="/Logo.ico" type="ico">
-
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-
-  <!-- FONTAWESOME -->
-  <script src="https://kit.fontawesome.com/14b1b88f84.js" crossorigin="anonymous"></script>
-
+    <title>Videos Verticales</title>
+    <link rel="stylesheet" href="/edicion.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Logo.ico" type="ico">
+    <script src="https://kit.fontawesome.com/14b1b88f84.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+  <section class="Amia-porfolio">
+    <div class="cerrar">
+      <a href="/Video.html"> <i class="fa-solid fa-arrow-left"></i> </a> 
+    </div>
 
-  <section class="ArteOnline-porfolio" >
- 
-<div class="cerrar" >
-<a href="/Video.html"> <i class="fa-solid fa-arrow-left"></i> </a> 
-</div>
+    <div class="contenedor-videos">
+      <div class="video-item js-video" data-id="Ky7oNQG8MqU"></div>
+      <div class="video-item js-video" data-id="Zcpseh9ggNE"></div>
+      
+    </div>
+  </section>
 
- 
+  <script>
+    document.querySelectorAll('.js-video').forEach(el => {
+      const id = el.getAttribute('data-id');
+      // Ponemos la miniatura de YouTube como fondo
+      el.style.backgroundImage = `url(https://img.youtube.com/vi/${id}/maxresdefault.jpg)`;
+      
+      // Añadimos el botón de Play visual
+      el.innerHTML = '<div class="play-btn"><i class="fa-solid fa-play"></i></div>';
 
-
-
-  <div class="contenedor-videos">
-
-   
-
-<div class="iframe-porfolio"> 
-<iframe width="1250" height="650" src="https://www.youtube.com/embed/Ky7oNQG8MqU?si=aHIezE6sXLmxi6ta" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-  <!-- ocultar 
-
-<div class="imagenes-porfolio">
-<img src="/ArteOnline_texto2.png">
-
-</div>
--->
-
-
-
-<div class="iframe-porfolio"> 
-<iframe width="1250" height="650" src="https://www.youtube.com/embed/Zcpseh9ggNE?si=fujhgDZuawNyR-bv" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-
-
-
-
-</div>
-</section>
-
-
-
-
-
-
+      el.addEventListener('click', function() {
+        this.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&modestbranding=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        this.classList.add('video-playing');
+      });
+    });
+  </script>
 </body>
 </html>
