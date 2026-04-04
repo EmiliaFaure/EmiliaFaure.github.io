@@ -1,192 +1,94 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: black;
     font-family: "Montserrat", sans-serif;
-
 }
 
-h2{
-
-    color: #ffffff;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    
+/* Contenedor Principal */
+.contenedor-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ESTO centra la última fila */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 80px auto 40px auto; /* Espacio para el botón cerrar arriba */
+    padding: 0 20px;
 }
 
-
-.trabajosVarios{
-   
-    margin: auto;
+/* Cada Item de Video */
+.video-item {
+    position: relative;
+    width: calc(33.333% - 20px); /* 3 columnas */
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-  padding-bottom: 30px;
-
-
+    transition: transform 0.3s ease;
 }
 
-.grilla{
-
-   
-    
-       gap: 6rem;
-    padding: 25px;
-     align-items: center;
-    justify-content: center;
-    text-align: center;
-  
+.video-item:hover {
+    transform: scale(1.03);
 }
 
-.grilla2{
-  
-     
-    padding: 25px;
-       gap: 2rem;
-         align-items: center;
-    justify-content: center;
-    text-align: center;
-  
-}
-
-
-
-
-.contenedor-videos{
-margin: auto;
-padding: 3em 2,5em;
-display: grid;
-place-items: center;
-grid-auto-columns: 100%;
-padding-top: 10%;
-padding-bottom: 5%;
-
-
-
-}
-
-
-.imagenes-porfolio{
-
-    width: 75vw;
-    max-width: 1200px;
-    min-width: 320px;
-    margin: auto;
-
-}
-
-
-.imagenes-porfolio img{
-
+.video-item iframe {
     width: 100%;
+    height: 100%;
+    border: none;
 }
 
-.iframe-porfolio{
-
-    width: 75vw;
-    max-width: 1200px;
-    min-width: 320px;
-    margin: auto;
-
-
+/* Botón de Play personalizado */
+.play-btn {
+    background: rgba(206, 154, 0, 0.8); /* El color dorado de tu hover */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    transition: background 0.3s;
 }
 
-
-.iframe-porfolio iframe{
-
-    width: 100%;
+.video-item:hover .play-btn {
+    background: rgba(206, 154, 0, 1);
 }
 
-.cerrar{
-
-text-decoration: none;
-position: fixed;
-transition: background-color .3s;
-padding: 2%;
-width: 97%;
-text-align: left;
+/* Botón Cerrar / Volver */
+.cerrar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
 }
 
-.cerrar i{
-font-size: 50px;
-color: #dedede;
+.cerrar i {
+    font-size: 40px;
+    color: #dedede;
+    transition: color 0.3s;
 }
 
-
-.cerrar :hover{
-
+.cerrar i:hover {
     color: #ce9a00;
 }
 
-.cerrar2 {
-
-
-
-text-decoration: none;
-position: fixed;
-transition: background-color .3s;
-padding: 2%;
-width: 97%;
-text-align: left;
-}
-
-.cerrar2 i{
-font-size: 50px;
-color: #5c5c5c;
-}
-
-
-.cerrar2 :hover{
-
-    color: #ce9a00;
-}
-
-
-
-
-
-@media only screen and (max-width: 1200px) {
-
-    .iframe-porfolio iframe{
-
-      height: 450px;
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .video-item {
+        width: calc(50% - 20px); /* 2 columnas en tablets */
     }
-
 }
 
-
-@media only screen and (max-width: 800px) {
-
-    .iframe-porfolio iframe{
-
-      height: 350px;
+@media (max-width: 600px) {
+    .video-item {
+        width: 100%; /* 1 columna en móviles */
     }
-
-}
-
-
-
-
-@media only screen and (max-width: 320px) {
-
-    .iframe-porfolio iframe{
-
-      height: 250px;
-    }
-
-
-
-
-}
-@media only screen and (max-width: 600px) {
-
-.cerrar i{
-
-font-size: 30px;
-    }
-
-.cerrar2 i{
-
-font-size: 30px;
-    }
+    .cerrar i { font-size: 30px; }
 }
