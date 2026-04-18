@@ -412,6 +412,7 @@ padding-top: 10px;
     padding-top: 2%;
     align-items: center;
     justify-content: center;
+  
     
 }
 
@@ -439,9 +440,14 @@ padding-top: 10px;
     align-items: center;
     justify-content: center;
 
+
 }
 
-
+#contenedor-porfolio{
+    background-color: #2c2c2c;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
 
 
 
