@@ -35,20 +35,20 @@ body {
 
 .video-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(206, 154, 0, 0.3); /* Sombra dorada */
+    box-shadow: 0 10px 20px rgba(209, 200, 173, 0.3); /* Sombra dorada */
 }
 
 /* Botón de Play personalizado */
 .play-btn {
-    background: rgba(206, 154, 0, 0.9);
-    width: 65px;
-    height: 65px;
+    background: rgba(255, 255, 255, 0.9);
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 26px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
     transition: background 0.3s, transform 0.3s;
     z-index: 2;
 }
