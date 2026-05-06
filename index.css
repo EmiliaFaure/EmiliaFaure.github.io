@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ebeaea;
+    
 
 }
 
@@ -11,7 +11,7 @@
 body {
    background-color: #000000;
       font-family: "Montserrat", serif;
-   
+   color: #ebeaea;
  
     }
 
