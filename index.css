@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+   
 
 }
 
@@ -11,7 +11,7 @@
 body {
    background-color: #000000;
       font-family: "Montserrat", serif;
-   color: #ebeaea;
+    color: #ebeaea;
  
     }
 
@@ -648,15 +648,11 @@ footer i:hover {
     width: 40%;
     margin: auto;
     padding-bottom: 1%;
-    color: aliceblue;
+
    
 
 }
 
-.formulario input, 
-.formulario textarea {
-    color: #000000; /* Fuerza el texto a negro */
-}
 
 
 .redes {
