@@ -653,6 +653,12 @@ footer i:hover {
 
 }
 
+.formulario input, 
+.formulario textarea {
+    color: #000000; /* Fuerza el texto a negro */
+}
+
+
 .redes {
     padding-top: 30px;
     padding-bottom: 30px;
