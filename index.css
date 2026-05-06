@@ -331,9 +331,6 @@ padding-top: 10px;
 
 
 
-
-
-
 .contenedor-portadas :hover {
     transform: scale(1.02);
 
@@ -347,137 +344,9 @@ padding-top: 10px;
 
 
 
-
-.redesSociales {
-
-    width: 420px;
-    height: 250px;
-    background: url(/RedesSociales.png);
-    background-size: cover cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;
-}
-
 .contenedor-portadas :hover {
     transform: scale(1.02);
 
-}
-
-.redesSociales i {
-
-    color: #ebeaea;
-    font-size: 45px;
-
-}
-
-.redesSociales i:hover {
-
-    color: #f9d363;
-}
-
-.youTube {
-
-    width: 420px;
-    height: 250px;
-    background: url(/Youtube.png);
-    background-size: cover cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;
-}
-
-.contenedor-portadas :hover {
-    transform: scale(1.02);
-
-}
-
-.youTube i {
-
-    color: #ebeaea;
-    font-size: 45px;
-
-}
-
-.youTube i:hover {
-
-    color: #eeb50c;
-}
-
-.Tv {
-
-    width: 420px;
-    height: 250px;
-    background: url(/TV.png);
-    background-size: cover cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;
-}
-
-.contenedor-portadas :hover {
-    transform: scale(1.02);
-
-}
-
-.Tv i {
-
-  color: #ebeaea;
-    font-size: 45px;
-
-}
-
-.Tv i:hover {
-
-    color: #eeb50c;
-}
-
-
-
-.masTrabajos-responsive {
-    display: none;
-}
-
-.masTrabajos {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    padding-top: 2%;
-    padding-bottom: 10%;
-    align-items: center;
-    justify-content: center;
-  
-}
-
-.btn-trabajo{
-    background-color: black;
-    color: #ffffff;
-}
-
-.btn-trabajo:hover{
-    background-color: rgb(255, 255, 255);
-    color: #000000;
 }
 
 
@@ -682,12 +551,6 @@ footer i:hover {
 /*********************************************************/
 /*********************************************************/
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: "Montserrat", sans-serif;
-}
 
 /* Contenedor Principal (Grilla) */
 .contenedor-videos {
@@ -724,7 +587,7 @@ body {
 
 /* Botón de Play personalizado */
 .play-btn {
-    background: rgba(104, 20, 20, 0.9);
+    background: rgba(195, 195, 195, 0.9);
     width: 45px;
     height: 45px;
     border-radius: 50%;
