@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #ebeaea;
 
 }
 
 
 body {
-    background-color: rgb(0, 0, 0);
+   background-color: #000000;
       font-family: "Montserrat", serif;
    
  
@@ -45,6 +46,18 @@ li {
 
 }
 
+
+.btn{
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+ 
+  .btn:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
 
 /*********************************************************/
 /*********************************************************/
@@ -85,7 +98,7 @@ header div.solid {
 header h4 {
 
     font-size: 1.5em;
-    color: #dedede;
+
     letter-spacing: 0.1em;
     text-shadow: black;
     flex: 1;
@@ -108,7 +121,7 @@ header h4 {
 .nav-list li a {
 
     text-decoration: none;
-    color: #dedede;
+
     font-size: 1.5em;
     text-shadow: black
 }
@@ -131,112 +144,59 @@ header h4 {
     width: 100%;
 }
 
-.texto-emi {
-
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    text-align: center;
 
 
-}
-
-.texto-emi h1 {
-
-    font-size: 3em;
-    color: rgb(239, 239, 239);
-    letter-spacing: 0.4em;
-    font-weight:400;
-
-}
-
-.texto-emi h3 {
-
-    font-size: 2em;
-    color: rgb(200, 200, 200);
-    letter-spacing: 8px;
-    font-weight:300;
-}
-
-.texto-emi i {
-
-    color: rgb(200, 200, 200);
-    font-size: 2em;
-    letter-spacing: 0.8em;
-    padding-top: 1%;
-}
 /*********************************************************/
 /*********************************************************/
 /* biografia */
 /*********************************************************/
 /*********************************************************/
 
+
+
 .contenedor-bio {
 
     width: 100%;
-    position: relative;
+  
     margin: auto;
-    display: flex;
     align-content: center;
     justify-content: center;
     max-width: 1350px;
+  padding: 40px;
+
+  
+
+}
+
+.texto-bio {
+
+    width: 90%;
+
+
+}
+
+
+.texto-bio p {
+    letter-spacing: 0.1em;
+
+    font-weight:200;
+    line-height: 2em;
    
-    padding-top: 20px;
- 
 }
 
-.bio {
 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: start;
-    width: 800px;
-    height: 750px;
-    color: rgb(214, 214, 214);
-
-    padding-top: 50px;
-
-
-
-}
-
-.bio h2 {
-
-    letter-spacing: 0.4em;
-    font-weight:400;
-    padding-top: 4%;
-}
-
-.bio h3 {
-
-    font-size: 25px;
-    font-weight:400;
-    
-}
-
-.contenedor-bio-texto{
- display: grid;
-        grid-template-columns: auto;
-        width: 100%;
-
-
-
-}
-
-.iconos-programas{
-
-    display: grid;
-        grid-template-columns: auto;
-        width: 100%;
-    
-}
-
-.iconos-programas h4 {
+.texto-bio h2, h4 {
 
         letter-spacing: 0.4em;
+    font-weight:400;
+padding-bottom: 20px;
+padding-top: 10px;
+  color: #ebeaea;
+}
+
+.texto-iconos h2, h4{
+
+letter-spacing: 0.4em;
     font-weight:400;
 padding-bottom: 20px;
 padding-top: 10px;
@@ -244,47 +204,19 @@ padding-top: 10px;
 
 }
 
-.texto-bio {
 
-    width: 90%;
-  
 
-}
 
-.texto-bio p {
-    letter-spacing: 0.1em;
-    text-align: justify;
-    font-weight:200;
-    line-height: 2em;
+
+
+.iconos-programas img{
+    width: 40px;
+    padding: 2px;
 }
 
 
-.flor {
-
-    width: 100%;
 
 
-}
-
-.iconos-porfolio{
-
-    display: flex;
-    gap: 15px;
-  padding-left: 2px;
-    margin: 0;
-   
-   
-}
-
-.iconos-porfolio i{
-
-    font-size: 28px;
-}
-
-.iconos-porfolio i:hover {
-
-    color: #eeb50c;
-}
 
 
 
@@ -293,12 +225,9 @@ padding-top: 10px;
 /* PORFOLIO */
 /*********************************************************/
 /*********************************************************/
-#Porfolio{
 
-    background-color: #202020;
-    padding-bottom: 200px;
-    padding-top: 50px;
-}
+
+
 
 .porfolio {
 
@@ -308,7 +237,7 @@ padding-top: 10px;
     color: rgb(200, 200, 200);
     letter-spacing: 0.4em;
     margin: auto;
-    padding-top: 4%;
+
 
 
 }
@@ -317,7 +246,7 @@ padding-top: 10px;
 .porfolio h4{
 
     font-weight:200;
-    padding-bottom: 60px;
+
 }
 
 .botones {
@@ -331,31 +260,11 @@ padding-top: 10px;
     padding-top: 20px;
     transition: all 0.25s;
     padding-bottom: 20px;
+    
 
 }
 
-.btn-edicion, .btn-uxui{
-    background-color: rgb(45, 45, 45);
-    color: white;
-  }
- 
-  .btn-edicion:hover{
 
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-  }
-  
-  .btn-uxui:hover{
-
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-  }
-
-
-.edicion {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 .edicion h4 {
 
@@ -369,41 +278,6 @@ padding-top: 10px;
 
 
 
-.EVideo{
-
-    width: 420px;
-    height: 250px;
-    background: url(/EdicionVideo.png);
-    background-size: cover cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;
-}
-
-.Duxui{
-
-    width: 420px;
-    height: 250px;
-    background: url(/DiseñoUxUI.png);
-    background-size: cover cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: all 0.25s;
-}
 
 
 
@@ -449,7 +323,7 @@ padding-top: 10px;
 }
 
 #contenedor-porfolio{
-    background-color: #2c2c2c;
+   
     padding-bottom: 100px;
     padding-top: 30px;
 }
@@ -608,116 +482,6 @@ padding-top: 10px;
 
 
 
-/*********************************************************/
-/*********************************************************/
-/* Diseño*/
-/*********************************************************/
-/*********************************************************/
-
-.diseno {
-    text-align: center; /* Centra el texto */
-    max-width: 1350px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-  }
-  
-  #uxui {
-    background-color: rgb(255, 255, 255);
-    padding-top: 2%;
-    padding-bottom: 4%;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
-    text-align: center;
-  }
-  
-  .titulo {
-    text-align: center;
-    padding-top: 4%;
-    padding-bottom: 8%;
-  }
-  
-  span {
-    color: black;
-    font-size: 2rem;
-    font-weight: 200;
-    letter-spacing: 0.4em;
-  
-  }
-  
-  .app-web {
-    display: flex; 
-    gap: 10px; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%; 
-    max-width: 1350px; 
-    margin: 0 auto; 
-    padding-top: 4%;
-    padding-bottom: 4%;
-  }
-  
-  .closet img,
-  .protoVideo video {
-    width: 700px;
-    height: 400px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-   
-
-.btn-diseno{
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-   
-}
-
-.btn-diseno:hover{
-    background-color: rgb(2, 2, 2);
-    color: #ffffff;
-}
-
-.botones-diseno{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    transition: all 0.25s;
-
- 
-}
-
-.otthon{
-
-    max-width: 1350px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-   padding-top: 4%;
-   padding-bottom: 2%;
-
-
-
- 
-
-
-}
-
-.otthon img{
-
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 10px; 
-   
-}
 
 
 /*********************************************************/
@@ -725,6 +489,11 @@ padding-top: 10px;
 /* Contacto*/
 /*********************************************************/
 /*********************************************************/
+
+#contacto{
+
+    background-color: #000000;
+}
 
 .datos-personales {
     margin-top: 4%;
@@ -819,6 +588,7 @@ padding-top: 10px;
 padding-bottom: 20px;
 padding-top: 30px;
     align-items: center;
+   
     
 
 
@@ -864,6 +634,7 @@ footer {
 
     text-align: center;
     color: rgb(200, 200, 200);
+    background-color: #000000;
 }
 
 
@@ -903,3 +674,499 @@ footer i:hover {
 
 
 
+/*********************************************************/
+/*********************************************************/
+/* edicion 2026*/
+/*********************************************************/
+/*********************************************************/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Contenedor Principal (Grilla) */
+.contenedor-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 80px auto 40px auto;
+    padding: 0 20px;
+}
+
+/* Cada Item de Video en la Grilla */
+.video-item {
+    position: relative;
+    width: calc(33.333% - 20px);
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(209, 200, 173, 0.3); /* Sombra dorada */
+}
+
+/* Botón de Play personalizado */
+.play-btn {
+    background: rgba(104, 20, 20, 0.9);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+    z-index: 2;
+}
+
+.video-item:hover .play-btn {
+    background: rgba(206, 154, 0, 1);
+    transform: scale(1.1);
+}
+
+/* Botón Cerrar / Volver (Arriba Izquierda) */
+.cerrar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+}
+
+.cerrar i {
+    font-size: 40px;
+    color: #dedede;
+    transition: color 0.3s;
+}
+
+.cerrar i:hover {
+    color: #ce9a00;
+}
+
+/* =========================================
+   ESTILOS DEL LIGHTBOX (EL VIDEO AGRANDADO)
+   ========================================= */
+.video-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Por encima de todo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.video-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Fondo oscuro detrás del video */
+.lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Casi negro */
+    cursor: pointer;
+}
+
+/* Contenedor del contenido (video + botón cerrar) */
+.lightbox-content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px; /* Ancho máximo del video agrandado */
+    z-index: 1001;
+    transform: scale(0.9);
+    transition: transform 0.4s ease;
+}
+
+.video-lightbox.active .lightbox-content {
+    transform: scale(1);
+}
+
+/* Contenedor responsivo para el iframe */
+.lightbox-video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.lightbox-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Botón de cerrar (X) del Lightbox */
+.lightbox-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+    color: #ce9a00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .video-item {
+        width: calc(50% - 20px); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor-videos { margin-top: 60px; gap: 10px; }
+    .video-item { width: 100%; } /* 1 columna en móviles */
+    .cerrar i { font-size: 30px; }
+    
+    /* Ajustes del Lightbox en móvil */
+    .lightbox-content { width: 95%; }
+    .lightbox-close { top: -40px; font-size: 30px; }
+}
+
+.cerrar2 {
+
+
+
+text-decoration: none;
+position: fixed;
+transition: background-color .3s;
+padding: 2%;
+width: 97%;
+text-align: left;
+}
+
+.cerrar2 i{
+font-size: 50px;
+color: #5c5c5c;
+}
+
+
+.cerrar2 :hover{
+
+    color: #ce9a00;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .video-item {
+        width: calc(50% - 20px); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .video-item {
+        width: 100%; /* 1 columna en móviles */
+    }
+    .cerrar i { font-size: 30px; }
+
+    .cerrar2 i { font-size: 30px; }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+    .formulario {
+
+        width: 95%;
+       
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    /* nav*/
+
+    .abrir-menu,
+    .cerrar-menu {
+
+        display: block;
+        border: 0;
+        font-size: 1rem;
+        background-color: transparent;
+        color: rgb(179, 179, 179);
+
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(16, 16, 16);
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav-list {
+
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+    header h4 {
+
+        font-size: 1.3em;
+        font-weight:200;
+    }
+
+    /* nav*/
+
+    
+
+
+
+
+    .edicion h4 {
+
+        font-size: 1em;
+        font-weight:200;
+    
+    }
+
+    .porfolio h4 {
+        font-size: 0.5em;
+        font-weight:200;
+       
+    }
+
+    .closet img,
+  .protoVideo video {
+    width: 600px;
+    object-fit: cover; 
+    border-radius: 10px; 
+  }
+
+
+}
+
+
+@media screen and (max-width: 440px) {
+
+
+   
+
+    .iconos-programas img{
+width: 10%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  
+
+   
+    .contactoIconos i{
+   
+        font-size: 35px;
+    
+    }
+    
+    .contactoIconos small{
+
+
+        font-size: 12px;
+    }
+
+  
+  
+
+    span {
+
+        font-size: 20px;
+        letter-spacing: 0.4em;
+    }
+
+    .closet img,
+    .protoVideo video {
+      width: 300px;
+      height: 200px;
+     
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+
+    /* nuevo */
+
+    .contenedor-portadas {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+  .contenedor-portadas2 {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+.contenedor-porfolio{
+
+ display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+
+
+}
+
+
+
+    .bio {
+
+        background-image: url(/flor_2.jpg);
+        background-repeat: no-repeat;
+      
+        height: auto;
+        padding-bottom: 10%;
+
+    }
+
+
+    .app-web{
+   
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    padding: 10px;
+      
+    }
+        .otthon{
+
+            display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+       padding: 10px;
+        
+        } 
+
+
+        
+
+}
+
+
+
+    
+
+
+@media only screen and (max-width: 560px) {
+
+    .redes {
+
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+ 
+}
+
+
+
+@media (max-width:475px) {
+    .iconos-contacto {
+
+        font-size: 35px;
+
+
+    }
+
+
+    .amia,
+    .arteOnline,
+    .katja,
+    .redesSociales,
+    .youTube,
+    .Tv
+    {
+        width: 300px ;
+        height: 200px;
+  
+}
+   .EVideo,
+   .Duxui
+   {
+
+     width: 300px ;
+        height: 200px;
+  
+   }
+  
+}
