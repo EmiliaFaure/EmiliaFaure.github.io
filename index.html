@@ -291,13 +291,23 @@
         el.innerHTML = '<div class="play-btn"><i class="fa-solid fa-play"></i></div>';
 
         // Al hacer clic, abrir el Lightbox
-        el.addEventListener('click', function() {
-          const videoId = this.getAttribute('data-id');
-          // Cargar el iframe grande con autoplay y limpieza de YouTube
-          videoTarget.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
-          lightbox.classList.add('active');
-          document.body.style.overflow = 'hidden'; // Evitar scroll en el fondo
-        });
+       el.addEventListener('click', function() {
+  const videoId = this.getAttribute('data-id');
+
+  // Evento GA4
+  gtag('event', 'video_open', {
+    video_id: videoId
+  });
+
+  videoTarget.innerHTML = `
+    <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&modestbranding=1&rel=0&showinfo=0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen></iframe>`;
+
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
       });
 
       // Función para cerrar el Lightbox
