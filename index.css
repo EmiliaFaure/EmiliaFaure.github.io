@@ -37,6 +37,7 @@ li {
     cursor: pointer;
     display: block;
     width: fit-content;
+    
   }
   
 
@@ -273,6 +274,7 @@ padding-top: 10px;
     color: rgb(200, 200, 200);
     letter-spacing: 0.4em;
     font-weight:200;
+    padding-bottom: 60px;
 
 }
 
@@ -560,7 +562,7 @@ footer i:hover {
     gap: 20px;
     max-width: 1200px;
     margin: 80px auto 40px auto;
-    padding: 0 20px;
+    padding: 0 20px 60px;
 }
 
 /* Cada Item de Video en la Grilla */
@@ -582,7 +584,7 @@ footer i:hover {
 
 .video-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(209, 200, 173, 0.3); /* Sombra dorada */
+    box-shadow: 0 10px 20px rgba(202, 155, 15, 0.3); /* Sombra dorada */
 }
 
 /* Botón de Play personalizado */
@@ -752,7 +754,74 @@ color: #5c5c5c;
     color: #ce9a00;
 }
 
+/* 1. Grilla ordenada para las tarjetas */
+.contenedor-videos {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 2rem !important;
+  width: 90% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
 
+/* 2. Tarjeta contenedora */
+.card-proyecto {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #000000; /* Color de fondo oscuro sutil */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-proyecto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. La miniatura del video (mantiene siempre formato 16:9 perfecto sin deformarse) */
+.card-proyecto .video-item {
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important; /* Anula cualquier height fijo previo */
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative !important;
+  cursor: pointer;
+}
+
+/* 4. Textos de la descripción */
+.video-info {
+  padding: 1rem 1.2rem 1.4rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.35rem;
+  text-align: left;
+}
+
+.card-tag {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888888;
+  font-weight: 600;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #b5b5b5;
+  font-weight: 300;
+}
 
 
 
